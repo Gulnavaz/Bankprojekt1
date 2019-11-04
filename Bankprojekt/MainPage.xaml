@@ -9,7 +9,15 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <NavigationView Content="NavigationView" x:Name="NavView" />
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <RelativePanel>
+            <Button Name="hamburger" FontFamily="segoe MDL2 assets" Content="&#xe700;" FontSize="32"/>
+        </RelativePanel>
 
 
     </Grid>
