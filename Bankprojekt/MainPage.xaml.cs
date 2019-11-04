@@ -24,6 +24,7 @@ namespace Bankprojekt
     {
         public MainPage()
         {
+
             this.InitializeComponent();
 
             string appName = Windows.ApplicationModel.Package.Current.DisplayName;
