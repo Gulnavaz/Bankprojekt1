@@ -39,9 +39,9 @@ namespace Bankprojekt
 
         private void iconsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (start.IsSelected) { }
-            else if (register.IsSelected) { }
-            else if (edit.IsSelected) { }
+            if (start.IsSelected) { ResultTextBlock.Text = "Startsida"; }
+            else if (register.IsSelected) {ResultTextBlock.Text="Registrera"; }
+            else if (edit.IsSelected) { ResultTextBlock.Text = "Redigera"; }
         }
     }
 }
