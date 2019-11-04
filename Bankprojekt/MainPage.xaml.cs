@@ -36,5 +36,10 @@ namespace Bankprojekt
         {
             MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen; 
         }
+
+        private void iconsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
