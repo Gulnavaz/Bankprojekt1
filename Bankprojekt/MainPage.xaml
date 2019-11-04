@@ -30,10 +30,10 @@
                    CompactPaneLength="56" >
             <SplitView.Pane>
                 <ListBox SelectionMode="Single" 
-                         x:Name="iconsListBox" 
+                         Name="iconsListBox" 
                          SelectionChanged="iconsListBox_SelectionChanged">
                     
-                    <ListBoxItem x:Name="start">
+                    <ListBoxItem Name="start">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets" 
                                        FontSize="36" 
@@ -46,7 +46,7 @@
                         </StackPanel>
                     </ListBoxItem>
                     
-                    <ListBoxItem x:Name="register">
+                    <ListBoxItem Name="register">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets" 
                                        FontSize="36" 
