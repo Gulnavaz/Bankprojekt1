@@ -9,16 +9,16 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        
+
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        
+
         <RelativePanel>
             <Button Name="hamburger" FontFamily="segoe MDL2 assets" Content="&#xe700;" FontSize="32"/>
         </RelativePanel>
-        
+
         <SplitView Grid.Row="1" >
 
             <ListBox>
