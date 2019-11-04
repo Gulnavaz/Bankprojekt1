@@ -20,13 +20,13 @@
         </RelativePanel>
         
         <SplitView Grid.Row="1" >
-            
+
             <ListBox>
                 <ListBoxItem/>
                 <ListBoxItem/>
                 <ListBoxItem/>
             </ListBox>
-            
+
         </SplitView>
 
     </Grid>
