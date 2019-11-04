@@ -18,7 +18,16 @@
         <RelativePanel>
             <Button Name="hamburger" FontFamily="segoe MDL2 assets" Content="&#xe700;" FontSize="32"/>
         </RelativePanel>
-
+        
+        <SplitView Grid.Row="1" >
+            
+            <ListBox>
+                <ListBoxItem/>
+                <ListBoxItem/>
+                <ListBoxItem/>
+            </ListBox>
+            
+        </SplitView>
 
     </Grid>
 </Page>
