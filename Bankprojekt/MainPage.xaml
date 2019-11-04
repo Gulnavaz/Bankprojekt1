@@ -26,6 +26,14 @@
                    CompactPaneLength="56" >
             <SplitView.Pane>
                 <ListBox>
+                    
+                    <ListBoxItem>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE80F;" />
+                            <TextBlock FontFamily="Verdana" FontSize="20" Padding="7" Text="Startsida"/>
+                        </StackPanel>
+                    </ListBoxItem>
+                    
                     <ListBoxItem>
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE1E2;" />
