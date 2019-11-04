@@ -30,21 +30,21 @@
                     <ListBoxItem>
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE80F;" />
-                            <TextBlock FontFamily="Verdana" FontSize="20" Padding="7" Text="Startsida"/>
+                            <TextBlock FontFamily="Verdana" FontSize="20" Padding="7" Text="Startsida" Margin="15,0,0,0"/>
                         </StackPanel>
                     </ListBoxItem>
                     
                     <ListBoxItem>
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE1E2;" />
-                            <TextBlock FontFamily="Verdana" Text="Registrera kund" FontSize="20" Padding="7" />
+                            <TextBlock FontFamily="Verdana" Text="Registrera kund" FontSize="20" Padding="7" Margin="15,0,0,0"/>
                         </StackPanel>
                     </ListBoxItem>
 
                     <ListBoxItem>
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="38" Text="&#xE779;" />
-                            <TextBlock FontFamily="Verdana" Text="Redigera kund" FontSize="20" Padding="7"/>
+                            <TextBlock FontFamily="Verdana" Text="Redigera kund" FontSize="20" Padding="7" Margin="15,0,0,0"/>
                         </StackPanel>
                     </ListBoxItem>
 
