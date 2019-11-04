@@ -30,5 +30,10 @@ namespace Bankprojekt
             
            // NavigationView.MenuItemsSourceProperty =
         }
+
+        private void hamburger_Click(object sender, RoutedEventArgs e)
+        {
+            MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen; 
+        }
     }
 }

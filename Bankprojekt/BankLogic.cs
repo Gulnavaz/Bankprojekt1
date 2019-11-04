@@ -15,11 +15,11 @@ namespace Bankprojekt
         }
         public boolean AddCustomer(string name, long pNr)
         {
-              //Skapar upp en ny kund med namnet name samt personnumer pNr,
+            //Skapar upp en ny kund med namnet name samt personnumer pNr,
         }
         public List<string> GetCustomer(long pNr)
         {
-               //Returnerar en List<string> som innehåller informationen om kunden
+            //Returnerar en List<string> som innehåller informationen om kunden
 
         }
         public boolean ChangeCustomerName(String name, long pNr)

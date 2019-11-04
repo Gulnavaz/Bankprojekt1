@@ -16,16 +16,35 @@
         </Grid.RowDefinitions>
 
         <RelativePanel>
-            <Button Name="hamburger" FontFamily="segoe MDL2 assets" Content="&#xe700;" FontSize="32"/>
+            <Button Name="hamburger" FontFamily="segoe MDL2 assets" Content="&#xe700;" FontSize="32" Click="hamburger_Click"/>
         </RelativePanel>
 
-        <SplitView Grid.Row="1" >
+        <SplitView Name="MySplitView" 
+                   DisplayMode="CompactOverlay" 
+                   Grid.Row="1" 
+                   OpenPaneLength="300" 
+                   CompactPaneLength="56" >
+            <SplitView.Pane>
+                <ListBox>
+                    <ListBoxItem>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE1E2;" />
+                            <TextBlock FontFamily="Verdana" Text="Registrera kund" FontSize="20" Padding="7" />
+                        </StackPanel>
+                    </ListBoxItem>
 
-            <ListBox>
-                <ListBoxItem/>
-                <ListBoxItem/>
-                <ListBoxItem/>
-            </ListBox>
+                    <ListBoxItem>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="38" Text="&#xE779;" />
+                            <TextBlock FontFamily="Verdana" Text="Redigera kund" FontSize="20" Padding="7"/>
+                        </StackPanel>
+                    </ListBoxItem>
+
+                    <ListBoxItem/>
+                    <ListBoxItem/>
+                </ListBox>
+            </SplitView.Pane>
+            
 
         </SplitView>
 
