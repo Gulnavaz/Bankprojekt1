@@ -9,7 +9,9 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <NavigationView Content="NavigationView" x:Name="NavView" />
+        <NavigationView Content="NavigationView"/>
+
+
 
 
     </Grid>

@@ -20,6 +20,7 @@ namespace Bankprojekt
         public List<string> GetCustomer(long pNr)
         {
                //Returnerar en List<string> som innehåller informationen om kunden
+
         }
         public boolean ChangeCustomerName(String name, long pNr)
         {
