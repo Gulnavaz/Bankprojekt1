@@ -20,7 +20,7 @@ namespace Bankprojekt
         }
         public bool AddCustomer(string name, long pNr)
         {
-              //Skapar upp en ny kund med namnet name samt personnumer pNr,
+            //Skapar upp en ny kund med namnet name samt personnumer pNr,
         }
         public List<string> GetCustomer(long pNr)
         {
