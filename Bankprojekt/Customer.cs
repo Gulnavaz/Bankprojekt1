@@ -10,14 +10,15 @@ namespace Bankprojekt
     {
         private string name;
         private long pNr;
+        
 
         private List<SavingsAccount> customerList;
 
-        public Customer(string name, long pNr)
+        public Customer(string name, long pNr, List<SavingsAccount> accounts)
         {
             this.name = Name;
             this.pNr = PNr;
-            customerList = new List<SavingsAccount>();
+            customerList = accounts;
         }
         public string Name { get; set; }
         public long PNr { get; set; }
