@@ -8,21 +8,16 @@ namespace Bankprojekt
 {
     public class Customer
     {
-        private string name;
-        private long pNr;
-        
-
-        private List<SavingsAccount> customerList;
 
         public Customer(string name, long pNr, List<SavingsAccount> accounts)
         {
-            this.name = Name;
-            this.pNr = PNr;
-            customerList = accounts;
+            this.Name = Name;
+            this.PNr = PNr;
+            this.Accounts = accounts;
         }
         public string Name { get; set; }
         public long PNr { get; set; }
-        public List<SavingsAccount> CustomerList { get; set; }
+        public List<SavingsAccount> Accounts { get; set; }
 
     }
 }

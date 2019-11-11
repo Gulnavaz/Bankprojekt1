@@ -50,7 +50,7 @@
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets" 
                                        FontSize="36" 
-                                       Text="&#xE1E2;" />
+                                       Text="&#xE1E2;" Tapped="TextBlock_Tapped_1" />
                             <TextBlock FontFamily="Verdana" 
                                        Text="Registrera kund" 
                                        FontSize="20" 

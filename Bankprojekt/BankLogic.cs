@@ -9,7 +9,6 @@ namespace Bankprojekt
     public class BankLogic
     {
          static List<Customer> customers = new List<Customer>();
-         public static List<SavingsAccount> accounts = new List<SavingsAccount>();
 
 
         public List<Customer> GetCustomers()
@@ -19,7 +18,7 @@ namespace Bankprojekt
         }
         public bool AddCustomer(string name, long pNr)
         {
-            Customer Nycustomer = new Customer(name, pNr, accounts);
+            Customer Nycustomer = new Customer(name, pNr, null);
             customers.Add(Nycustomer);
 
             if (Nycustomer.PNr == pNr)
@@ -34,7 +33,7 @@ namespace Bankprojekt
         public List<string> GetCustomer(long pNr)
         {
             //Returnerar en List<string> som innehåller informationen om kunden
-            return;
+            return null;
         }
         public bool ChangeCustomerName(String name, long pNr)
         {
@@ -45,6 +44,7 @@ namespace Bankprojekt
         public List<string> RemoveCustomer(long pNr)
         {
             //Tar bort kund med personnummer pNr ur banken
+            return null;
         }
         public int AddSavingsAccount(long pNr)
         {
@@ -54,7 +54,7 @@ namespace Bankprojekt
         public string GetAccount(Customer cust, int accountId)
         {
             string acc = null;
-            foreach (SavingsAccount ac in cust.CustomerList)
+            foreach (SavingsAccount ac in cust.Accounts)
             {
                 if (accountId == ac.AccountId)
                 {
@@ -67,7 +67,7 @@ namespace Bankprojekt
         }
         public bool Deposit(Customer cust,long pNr, int accountId, decimal amount)
         {
-            List<SavingsAccount> accountlist = cust.CustomerList;
+            List<SavingsAccount> accountlist = cust.Accounts;
             SavingsAccount SearchAccount = accountlist.FirstOrDefault(choosen => choosen.AccountId == accountId);
 
             SearchAccount.Saldo += amount;
@@ -84,7 +84,7 @@ namespace Bankprojekt
         {
             //Stänger ett konto med kontonnummer accountId som tillhör kunden
             //pNr, presentation av kontots saldo samt ränta på pengarna ska genereras.
-            return;
+            return null;
         }
 
 
