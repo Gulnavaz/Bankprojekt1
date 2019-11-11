@@ -34,7 +34,7 @@ namespace Bankprojekt
         public List<string> GetCustomer(long pNr)
         {
             //Returnerar en List<string> som innehåller informationen om kunden
-
+            return;
         }
         public bool ChangeCustomerName(String name, long pNr)
         {
@@ -84,6 +84,7 @@ namespace Bankprojekt
         {
             //Stänger ett konto med kontonnummer accountId som tillhör kunden
             //pNr, presentation av kontots saldo samt ränta på pengarna ska genereras.
+            return;
         }
 
 

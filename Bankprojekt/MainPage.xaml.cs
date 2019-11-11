@@ -43,5 +43,10 @@ namespace Bankprojekt
             else if (register.IsSelected) {ResultTextBlock.Text="Registrera"; }
             else if (edit.IsSelected) { ResultTextBlock.Text = "Redigera"; }
         }
+
+        private void TextBlock_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+
+        }
     }
 }
