@@ -19,7 +19,7 @@
             <Button Name="hamburger" 
                     FontFamily="segoe MDL2 assets" 
                     Content="&#xe700;" 
-                    FontSize="32" 
+                    FontSize="36" 
                     Click="hamburger_Click"/>
         </RelativePanel>
 
@@ -32,7 +32,7 @@
                 <ListBox SelectionMode="Single" 
                          Name="iconsListBox" 
                          SelectionChanged="iconsListBox_SelectionChanged">
-                    
+
                     <ListBoxItem Name="start">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets" 
@@ -45,7 +45,7 @@
                                        Margin="15,0,0,0"/>
                         </StackPanel>
                     </ListBoxItem>
-                    
+
                     <ListBoxItem Name="register">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets" 
@@ -73,10 +73,6 @@
                     </ListBoxItem>
                 </ListBox>
             </SplitView.Pane>
-            
-            <SplitView.Content>
-                <TextBlock Name="ResultTextBlock" FontSize="28" Foreground="DarkOrange" Margin="7,0,0,0" Padding="1"/>
-            </SplitView.Content>
 
         </SplitView>
 

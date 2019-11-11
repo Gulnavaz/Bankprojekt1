@@ -20,29 +20,29 @@ namespace Bankprojekt
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class BlankPage1 : Page
+    public sealed partial class Registrera : Page
     {
-        public BlankPage1()
+        public Registrera()
         {
             this.InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)//Namn
         {
 
         }
 
-        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
+        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)//prnummer
         {
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)//lägg till
         {
-
+            BankLogic.Instance.AddCustomer(Namn.Text, Convert.ToInt64(pNr.Text));
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)//tillbaka
         {
             this.Frame.Navigate(typeof(MainPage));
         }

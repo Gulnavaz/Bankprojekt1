@@ -28,7 +28,8 @@ namespace Bankprojekt
             this.InitializeComponent();
 
             string appName = Windows.ApplicationModel.Package.Current.DisplayName;
-            
+            BankLogic runtime = new BankLogic();
+           
            // NavigationView.MenuItemsSourceProperty =
         }
 
@@ -37,21 +38,21 @@ namespace Bankprojekt
             MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen; 
         }
 
+
+
         private void iconsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (start.IsSelected) { ResultTextBlock.Text = "Startsida"; }
-            else if (register.IsSelected) {ResultTextBlock.Text="Registrera"; }
-            else if (edit.IsSelected) { ResultTextBlock.Text = "Redigera"; }
+       
         }
 
         private void TextBlock_Tapped(object sender, TappedRoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(Startsida));
         }
 
         private void TextBlock_Tapped_1(object sender, TappedRoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(BlankPage1));
+            this.Frame.Navigate(typeof(Registrera));
         }
     }
 }

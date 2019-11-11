@@ -8,8 +8,20 @@ namespace Bankprojekt
 {
     public class BankLogic
     {
-         static List<Customer> customers = new List<Customer>();
+        public List<Customer> customers = new List<Customer>();
+        private static BankLogic instance = null;
 
+        public static BankLogic Instance
+        {
+            get
+            {
+                if(instance == null)
+                {
+                    instance = new BankLogic();
+                }
+                return instance;
+            }
+        }
 
         public List<Customer> GetCustomers()
         {
@@ -18,17 +30,12 @@ namespace Bankprojekt
         }
         public bool AddCustomer(string name, long pNr)
         {
-            Customer Nycustomer = new Customer(name, pNr, null);
-            customers.Add(Nycustomer);
+          
+            customers.Add(new Customer(name, pNr, null));
 
-            if (Nycustomer.PNr == pNr)
-            {
-                return false;
-            }
-            else
-            {
+          
                 return true;
-            }
+            
         }
         public List<string> GetCustomer(long pNr)
         {
