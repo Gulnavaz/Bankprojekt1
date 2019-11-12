@@ -40,6 +40,7 @@ namespace Bankprojekt
         private void Button_Click(object sender, RoutedEventArgs e)//lägg till
         {
             BankLogic.Instance.AddCustomer(Namn.Text, Convert.ToInt64(pNr.Text));
+            kundText.Text = "Kunden är tillagd";
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)//tillbaka

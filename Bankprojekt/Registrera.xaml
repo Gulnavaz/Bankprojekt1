@@ -9,14 +9,73 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="210,198,0,0" Text="Namn:" TextWrapping="Wrap" VerticalAlignment="Top" Height="64" Width="142" FontSize="48"/>
-        <TextBox x:Name="Namn" HorizontalAlignment="Left" Margin="356,198,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="68" Width="308" TextChanged="TextBox_TextChanged" FontSize="48"/>
-        <TextBlock HorizontalAlignment="Left" Margin="721,198,0,0" Text="Personnr:" TextWrapping="Wrap" VerticalAlignment="Top" Height="77" Width="208" FontSize="48"/>
-        <TextBox x:Name="pNr" HorizontalAlignment="Left" Margin="948,198,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="68" Width="308" FontSize="48" RenderTransformOrigin="0.5,0.5" TextChanged="TextBox_TextChanged_1">
+        <TextBlock HorizontalAlignment="Left" 
+                   Margin="210,198,0,0" 
+                   Text="Namn:" 
+                   TextWrapping="Wrap" 
+                   VerticalAlignment="Top" 
+                   Height="64" 
+                   Width="142" 
+                   FontSize="48"/>
+
+        <TextBox x:Name="Namn" 
+                 HorizontalAlignment="Left" 
+                 Margin="356,198,0,0" 
+                 Text="" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top" 
+                 Height="68" 
+                 Width="308" 
+                 TextChanged="TextBox_TextChanged" 
+                 FontSize="48"/>
+
+        <TextBlock HorizontalAlignment="Left" 
+                   Margin="721,198,0,0" 
+                   Text="Personnr:" 
+                   TextWrapping="Wrap" 
+                   VerticalAlignment="Top" 
+                   Height="77" 
+                   Width="208" 
+                   FontSize="48"/>
+
+        <TextBox x:Name="pNr" 
+                 HorizontalAlignment="Left" 
+                 Margin="948,198,0,0" 
+                 Text="" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top" 
+                 Height="68" 
+                 Width="308" 
+                 FontSize="48" 
+                 RenderTransformOrigin="0.5,0.5" 
+                 TextChanged="TextBox_TextChanged_1">
 
         </TextBox>
-        <Button Content="Lägg till" Margin="1080,365,0,0" VerticalAlignment="Top" Height="72" Width="176" FontSize="36" Click="Button_Click"/>
-        <Button Content="Tillbaka" Margin="210,74,0,0" VerticalAlignment="Top" Height="46" Width="92" Click="Button_Click_1"/>
+        <Button Content="Lägg till" 
+                Margin="1080,365,0,0" 
+                VerticalAlignment="Top" 
+                Height="72" 
+                Width="176" 
+                FontSize="36" 
+                Click="Button_Click"/>
+
+        <Button Content="Tillbaka" 
+                Margin="210,74,0,0" 
+                VerticalAlignment="Top" 
+                Height="46" 
+                Width="92" 
+                Click="Button_Click_1"/>
+
+        <TextBlock HorizontalAlignment="Center" 
+                   Name="kundText"
+                   Margin="0,364,0,0" 
+                   TextWrapping="Wrap" 
+                   VerticalAlignment="Top" 
+                   Height="51" 
+                   Width="419"
+                   FontFamily="Verdana"
+                   FontSize="32"
+                   Foreground="DarkRed"/>
 
     </Grid>
 </Page>
