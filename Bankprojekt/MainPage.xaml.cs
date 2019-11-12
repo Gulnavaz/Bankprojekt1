@@ -51,5 +51,10 @@ namespace Bankprojekt
         {
            
         }
+
+        private void TextBlock_Tapped_2(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Redigerakund));
+        }
     }
 }

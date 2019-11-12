@@ -63,7 +63,7 @@
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets" 
                                        FontSize="38" 
-                                       Text="&#xE779;" />
+                                       Text="&#xE779;" Tapped="TextBlock_Tapped_2" />
                             <TextBlock FontFamily="Verdana" 
                                        Text="Redigera kund" 
                                        FontSize="20" 
