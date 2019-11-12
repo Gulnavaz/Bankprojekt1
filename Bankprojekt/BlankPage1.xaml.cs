@@ -26,5 +26,10 @@ namespace Bankprojekt
         {
             this.InitializeComponent();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Startsida));
+        }
     }
 }
