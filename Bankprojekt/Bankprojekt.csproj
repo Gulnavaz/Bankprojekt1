@@ -120,6 +120,9 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="BankLogic.cs" />
+    <Compile Include="Redigerakund.xaml.cs">
+      <DependentUpon>Redigerakund.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Registrera.xaml.cs">
       <DependentUpon>Registrera.xaml</DependentUpon>
     </Compile>
@@ -154,6 +157,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Redigerakund.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Registrera.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

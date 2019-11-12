@@ -47,5 +47,9 @@ namespace Bankprojekt
         {
             this.Frame.Navigate(typeof(Registrera));
         }
+        public void iconsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+           
+        }
     }
 }
