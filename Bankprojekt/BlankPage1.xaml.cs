@@ -27,9 +27,18 @@ namespace Bankprojekt
             this.InitializeComponent();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Startsida));
+        }
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            string Temp = "Kunder\t";
+            for (int i = 0; i < BankLogic.Instance.customers.Count; i++)
+            {
+                Temp = Temp + BankLogic.Instance.customers[i].Name + " pNr: " + BankLogic.Instance.customers[i].PNr.ToString() + "\t";
+            }
+            Lista.Text = Temp;
         }
     }
 }

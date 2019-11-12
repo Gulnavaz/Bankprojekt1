@@ -9,7 +9,9 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button Content="Tillbaka" Margin="210,74,0,0" VerticalAlignment="Top" Height="46" Width="92" Click="Button_Click_1"/>
+        <TextBlock x:Name="Lista" HorizontalAlignment="Left" Margin="148,128,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="501" Width="1166"/>
+        <Button Content="Refresh" Margin="501,632,0,0" VerticalAlignment="Top" Click="Button_Click_1" Height="48" Width="136"/>
+        <Button Content="Tillbaka" Margin="210,74,0,0" VerticalAlignment="Top" Height="46" Width="92" Click="Button_Click"/>
 
     </Grid>
 </Page>
