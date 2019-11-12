@@ -30,19 +30,12 @@ namespace Bankprojekt
             string appName = Windows.ApplicationModel.Package.Current.DisplayName;
             BankLogic runtime = new BankLogic();
            
-           // NavigationView.MenuItemsSourceProperty =
+           
         }
 
         private void hamburger_Click(object sender, RoutedEventArgs e)
         {
             MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen; 
-        }
-
-
-
-        private void iconsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-       
         }
 
         private void TextBlock_Tapped(object sender, TappedRoutedEventArgs e)

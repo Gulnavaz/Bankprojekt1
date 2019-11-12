@@ -72,21 +72,21 @@ namespace Bankprojekt
             return acc;
 
         }
-        public bool Deposit(Customer cust,long pNr, int accountId, decimal amount)
-        {
-            List<SavingsAccount> accountlist = cust.Accounts;
-            SavingsAccount SearchAccount = accountlist.FirstOrDefault(choosen => choosen.AccountId == accountId);
+        //public bool Deposit(Customer cust,long pNr, int accountId, decimal amount)
+        //{
+        //    List<SavingsAccount> accountlist = cust.Accounts;
+        //    SavingsAccount SearchAccount = accountlist.FirstOrDefault(choosen => choosen.AccountId == accountId);
 
-            SearchAccount.Saldo += amount;
+        //    SearchAccount.Saldo += amount;
 
-            return true;
-        }
-        public bool Withdraw(long pNr, int accountId, decimal amount)
-        {
-            //Gör ett uttag på konto med kontonnummer accountId som tillhör
-            //kunden pNr, returnerar true om det gick bra annars false.
-            return true;
-        }
+        //    return true;
+        //}
+        //public bool Withdraw(long pNr, int accountId, decimal amount)
+        //{
+        //    //Gör ett uttag på konto med kontonnummer accountId som tillhör
+        //    //kunden pNr, returnerar true om det gick bra annars false.
+        //    return true;
+        //}
         public string CloseAccount(long pNr, int accountId)
         {
             //Stänger ett konto med kontonnummer accountId som tillhör kunden
