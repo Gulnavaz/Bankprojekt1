@@ -68,7 +68,7 @@
                                        Text="Redigera kund" 
                                        FontSize="20" 
                                        Padding="7" 
-                                       Margin="15,0,0,0"/>
+                                       Margin="15,0,0,0" Tapped="TextBlock_Tapped_3"/>
                         </StackPanel>
                     </ListBoxItem>
                 </ListBox>

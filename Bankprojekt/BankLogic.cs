@@ -94,6 +94,9 @@ namespace Bankprojekt
             return null;
         }
 
+        //TODO 1, lista av kunder på meny
+        // 2 Att man kan välha en kund och se kundens alla konto, 
+        // lägga till konto eller redigera konto , withdraw eller deposit, Radera konto.
 
     }
 }
