@@ -13,8 +13,9 @@
             <ColumnDefinition Width="249*" />
             <ColumnDefinition Width="391*"/>
         </Grid.ColumnDefinitions>
-        <Rectangle HorizontalAlignment="Left" Height="641" Margin="260,41,0,0" Stroke="Black" VerticalAlignment="Top" Width="756" Grid.ColumnSpan="2" FocusVisualPrimaryBrush="Orange" StrokeThickness="2"/>
-        <ListView Margin="317,177,331,158" Name="CustomersListView" Grid.ColumnSpan="2" Background="Orange">
+        <Rectangle HorizontalAlignment="Left" Height="633" Margin="214,49,0,0" Stroke="Black" VerticalAlignment="Top" Width="856" Grid.ColumnSpan="2" StrokeThickness="2" Fill="Orange"/>
+        <Rectangle HorizontalAlignment="Left" Height="577" Margin="260,81,0,0" Stroke="Black" VerticalAlignment="Top" Width="767" Grid.ColumnSpan="2" FocusVisualPrimaryBrush="Orange" StrokeThickness="2" Fill="White"/>
+        <ListView Margin="317,168,331,167" Name="CustomersListView" Grid.ColumnSpan="2" Background="White" FocusVisualSecondaryBrush="#99000000" BorderBrush="Black">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid>
@@ -32,9 +33,10 @@
             </ListView.ItemTemplate>
 
         </ListView>
-        <TextBlock TextWrapping="Wrap" FontSize="66" Margin="405,41,404,561" Grid.ColumnSpan="2" Foreground="Black"><Run Text=" "/><Run Text="Redigera Kund"/></TextBlock>
-        <Button Content="Redigera" Margin="317,597,0,0" VerticalAlignment="Top" Height="59" Width="132" Background="#33FFA500" FocusVisualPrimaryBrush="White" BorderBrush="Black"/>
-        <Button Content="Insättning/uttag" Grid.Column="1" Margin="290,597,0,0" VerticalAlignment="Top" Height="59" Width="155" Background="#33FFA500" FocusVisualPrimaryBrush="White" Foreground="Black" BorderBrush="Black"/>
+        <TextBlock TextWrapping="Wrap" FontSize="50" Margin="460,81,451,545" Grid.ColumnSpan="2" Foreground="Black" TextDecorations="Underline"><Run Text=" "/><Run Text="Redigera Kund"/></TextBlock>
+        <Button Content="Redigera" Margin="317,562,0,0" VerticalAlignment="Top" Height="59" Width="132" Background="#33FFA500" FocusVisualPrimaryBrush="White" BorderBrush="Black"/>
+        <Button Content="Insättning/uttag" Grid.Column="1" Margin="290,562,0,0" VerticalAlignment="Top" Height="59" Width="155" Background="#33FFA500" FocusVisualPrimaryBrush="White" Foreground="Black" BorderBrush="Black"/>
+
 
 
 

@@ -13,8 +13,9 @@
             <ColumnDefinition Width="249*" />
             <ColumnDefinition Width="391*"/>
         </Grid.ColumnDefinitions>
-        <Rectangle HorizontalAlignment="Left" Height="657" Margin="102,42,0,0" Stroke="Black" VerticalAlignment="Top" Width="1108" Grid.ColumnSpan="2" StrokeThickness="2"/>
-        <ListView Margin="141,164,140,21" Name="CustomersListView" Grid.ColumnSpan="2" Background="Orange">
+        <Rectangle HorizontalAlignment="Left" Height="689" Margin="91,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="1105" Grid.ColumnSpan="2" StrokeThickness="2" Fill="Orange"/>
+        <Rectangle HorizontalAlignment="Left" Height="629" Margin="116,38,0,0" Stroke="Black" VerticalAlignment="Top" Width="1050" Grid.ColumnSpan="2" StrokeThickness="2" Fill="White"/>
+        <ListView Margin="141,132,159,92" Name="CustomersListView" Grid.ColumnSpan="2" Background="White" FocusVisualSecondaryBrush="#99000000" BorderBrush="Black">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid>
@@ -31,7 +32,8 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <TextBlock HorizontalAlignment="Left" Margin="10,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="259" Height="145" FontSize="72" Grid.Column="1" FocusVisualPrimaryBrush="Orange" FocusVisualSecondaryBrush="#99D62727" Foreground="Black"><Run Text="K"/><Run Text="under"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="63,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" Height="87" FontSize="50" Grid.Column="1" FocusVisualPrimaryBrush="Orange" FocusVisualSecondaryBrush="#99D62727" Foreground="Black" TextDecorations="Underline"><Run Text="K"/><Run Text="under"/><LineBreak/><Run/></TextBlock>
+
 
     </Grid>
 </Page>

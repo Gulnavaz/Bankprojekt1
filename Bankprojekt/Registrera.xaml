@@ -72,7 +72,7 @@
                 <CompositeTransform ScaleX="1"/>
             </TextBlock.RenderTransform>
         </TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="512,84,0,0" Text="Regristrera Kund" TextWrapping="Wrap" VerticalAlignment="Top" Height="58" Width="321" FontSize="35"/>
+        <TextBlock HorizontalAlignment="Left" Margin="512,84,0,0" Text="Regristrera Kund" TextWrapping="Wrap" VerticalAlignment="Top" Height="58" Width="321" FontSize="35" TextDecorations="Underline"/>
 
 
 
