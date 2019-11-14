@@ -62,12 +62,12 @@
 
         <TextBlock HorizontalAlignment="Left" 
                    Name="kundText"
-                   Margin="270,308,0,0" 
+                   Margin="317,335,0,0" 
                    TextWrapping="Wrap" 
                    VerticalAlignment="Top" 
                    FontFamily="Verdana"
-                   FontSize="25"
-                   Foreground="Black" Width="418" Height="92" RenderTransformOrigin="0.5,0.5">
+                   FontSize="23"
+                   Foreground="Black" Width="396" Height="92" RenderTransformOrigin="0.5,0.5">
             <TextBlock.RenderTransform>
                 <CompositeTransform ScaleX="1"/>
             </TextBlock.RenderTransform>

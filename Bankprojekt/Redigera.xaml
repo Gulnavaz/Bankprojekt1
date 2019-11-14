@@ -32,9 +32,10 @@
             </ListView.ItemTemplate>
 
         </ListView>
-        <TextBlock Text="Redigera Kund" TextWrapping="Wrap" FontSize="66" Margin="415,46,374,515" Grid.ColumnSpan="2" Foreground="Black"/>
+        <TextBlock TextWrapping="Wrap" FontSize="66" Margin="415,46,384,545" Grid.ColumnSpan="2" Foreground="Black"><Run Text=" "/><Run Text="Redigera Kund"/></TextBlock>
         <Button Content="Redigera" Margin="317,597,0,0" VerticalAlignment="Top" Height="59" Width="132" Background="#33FFA500" FocusVisualPrimaryBrush="White" BorderBrush="Black"/>
         <Button Content="Insättning/uttag" Grid.Column="1" Margin="290,597,0,0" VerticalAlignment="Top" Height="59" Width="155" Background="#33FFA500" FocusVisualPrimaryBrush="White" Foreground="Black" BorderBrush="Black"/>
+        
 
     </Grid>
 </Page>
