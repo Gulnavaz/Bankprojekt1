@@ -9,8 +9,8 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid Background="White" FocusVisualPrimaryBrush="#FFB20E0E">
-        <Rectangle HorizontalAlignment="Center" Height="651" Stroke="Black" VerticalAlignment="Center" Width="907" RadiusX="0" RadiusY="0" Fill="Orange"/>
-        <Rectangle HorizontalAlignment="Center" Height="599" Stroke="Black" VerticalAlignment="Center" Width="808" Fill="White"/>
+        <Rectangle HorizontalAlignment="Center" Height="651" Stroke="Black" VerticalAlignment="Center" Width="907" RadiusX="0" RadiusY="0" Fill="Orange" StrokeThickness="2"/>
+        <Rectangle HorizontalAlignment="Center" Height="599" Stroke="Black" VerticalAlignment="Center" Width="808" Fill="White" StrokeThickness="2"/>
         <TextBlock HorizontalAlignment="Left" 
                    Margin="459,177,0,0" 
                    Text="Namn:" 
@@ -62,12 +62,12 @@
 
         <TextBlock HorizontalAlignment="Left" 
                    Name="kundText"
-                   Margin="317,335,0,0" 
+                   Margin="418,335,0,0" 
                    TextWrapping="Wrap" 
                    VerticalAlignment="Top" 
                    FontFamily="Verdana"
                    FontSize="23"
-                   Foreground="Black" Width="396" Height="92" RenderTransformOrigin="0.5,0.5">
+                   Foreground="Black" Width="295" Height="92" RenderTransformOrigin="0.5,0.5">
             <TextBlock.RenderTransform>
                 <CompositeTransform ScaleX="1"/>
             </TextBlock.RenderTransform>
