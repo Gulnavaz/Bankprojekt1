@@ -8,9 +8,9 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid Background="Black" FocusVisualPrimaryBrush="#FFB20E0E">
+    <Grid Background="White" FocusVisualPrimaryBrush="#FFB20E0E">
         <Rectangle HorizontalAlignment="Center" Height="651" Stroke="Black" VerticalAlignment="Center" Width="907" RadiusX="0" RadiusY="0" Fill="Orange"/>
-        <Rectangle HorizontalAlignment="Center" Height="599" Stroke="Black" VerticalAlignment="Center" Width="808" Fill="#FFFF6800"/>
+        <Rectangle HorizontalAlignment="Center" Height="599" Stroke="Black" VerticalAlignment="Center" Width="808" Fill="White"/>
         <TextBlock HorizontalAlignment="Left" 
                    Margin="414,273,0,0" 
                    Text="Namn:" 
@@ -59,7 +59,7 @@
                 Height="72" 
                 Width="176" 
                 FontSize="36" 
-                Click="Button_Click" Background="#33FFFFFF"/>
+                Click="Button_Click" Background="#33000000"/>
 
         <TextBlock HorizontalAlignment="Left" 
                    Name="kundText"

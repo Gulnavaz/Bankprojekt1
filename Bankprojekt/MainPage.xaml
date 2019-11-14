@@ -88,7 +88,7 @@
                 </ListBox>
             </SplitView.Pane>
             <SplitView.Content>
-                <Frame x:Name="NavigationDetail" Background="Black">
+                <Frame x:Name="NavigationDetail" Background="#FFFDFDFD">
 
                 </Frame>
             </SplitView.Content>
