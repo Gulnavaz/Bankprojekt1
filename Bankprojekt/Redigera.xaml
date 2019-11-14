@@ -13,7 +13,7 @@
             <ColumnDefinition Width="249*" />
             <ColumnDefinition Width="391*"/>
         </Grid.ColumnDefinitions>
-        <Rectangle HorizontalAlignment="Left" Height="641" Margin="260,41,0,0" Stroke="Black" VerticalAlignment="Top" Width="734" Grid.ColumnSpan="2" FocusVisualPrimaryBrush="Orange" StrokeThickness="2"/>
+        <Rectangle HorizontalAlignment="Left" Height="641" Margin="260,41,0,0" Stroke="Black" VerticalAlignment="Top" Width="756" Grid.ColumnSpan="2" FocusVisualPrimaryBrush="Orange" StrokeThickness="2"/>
         <ListView Margin="317,177,331,158" Name="CustomersListView" Grid.ColumnSpan="2" Background="Orange">
             <ListView.ItemTemplate>
                 <DataTemplate>
