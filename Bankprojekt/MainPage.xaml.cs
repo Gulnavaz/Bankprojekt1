@@ -26,6 +26,7 @@ namespace Bankprojekt
         {
 
             this.InitializeComponent();
+            NavigationDetail.Navigate(typeof(Startsida));
 
             string appName = Windows.ApplicationModel.Package.Current.DisplayName;
             BankLogic runtime = new BankLogic();
@@ -38,28 +39,32 @@ namespace Bankprojekt
             MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen; 
         }
 
-        private void TextBlock_Tapped(object sender, TappedRoutedEventArgs e)
+        private void Startsida_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Startsida));
+            NavigationDetail.Navigate(typeof(Startsida));
+            MySplitView.IsPaneOpen = false;
         }
 
-        private void TextBlock_Tapped_1(object sender, TappedRoutedEventArgs e)
+        private void Registrera_Tapped_1(object sender, TappedRoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Registrera));
+            NavigationDetail.Navigate(typeof(Registrera)); 
+            MySplitView.IsPaneOpen = false;
         }
         public void iconsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
            
         }
 
-        private void TextBlock_Tapped_2(object sender, TappedRoutedEventArgs e)
+        private void Redigera_Tapped_2(object sender, TappedRoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(BlankPage1));
+            NavigationDetail.Navigate(typeof(Redigera));
+            MySplitView.IsPaneOpen = false;
         }
 
         private void TextBlock_Tapped_3(object sender, TappedRoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(BlankPage1));
+            NavigationDetail.Navigate(typeof(Redigera));
+            MySplitView.IsPaneOpen = false;
         }
     }
 }

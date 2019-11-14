@@ -8,18 +8,23 @@ namespace Bankprojekt
 {
     public class SavingsAccount
     {
-        private decimal saldo;
-        private double räntesats;
-        private string kontotyp;
-        private int accountId;
+        //private decimal saldo;
+        //private double räntesats;
+        //private string kontotyp;
+        //private int accountId;
 
         public SavingsAccount(decimal saldo, double räntesats, string kontotyp, int accountId)
         {
-            this.accountId = AccountId;
-            this.räntesats = Räntesats;
-            this.kontotyp = Kontotyp;
-            this.saldo = Saldo;
+            //this.accountId = AccountId;
+            //this.räntesats = Räntesats;
+            //this.kontotyp = Kontotyp;
+            //this.saldo = Saldo;
         }
+        public SavingsAccount()
+        {
+
+        }
+
         public decimal Saldo { get; set; }
         public double Räntesats { get; set; }
         public string Kontotyp { get; set; }

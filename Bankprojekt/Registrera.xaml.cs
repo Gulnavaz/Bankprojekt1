@@ -39,13 +39,23 @@ namespace Bankprojekt
 
         private void Button_Click(object sender, RoutedEventArgs e)//lägg till
         {
-            BankLogic.Instance.AddCustomer(Namn.Text, Convert.ToInt64(pNr.Text));
-            kundText.Text = "Kunden är tillagd";
-        }
+            try
+            {
+                if (App.Customers.Where(c => c.PNr == Convert.ToInt64(pNr.Text)).ToList().Count > 0) 
+                {
+                    kundText.Text = "Kunden finns redan";
+                }
+                else
+                {
+                    BankLogic.Instance.AddCustomer(Namn.Text, Convert.ToInt64(pNr.Text));
+                    kundText.Text = "Kunden är tillagd";
+                }
+            }
+            catch(Exception ex)
+            {
+                kundText.Text = ex.Message;
+            }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)//tillbaka
-        {
-            this.Frame.Navigate(typeof(MainPage));
         }
     }
 }

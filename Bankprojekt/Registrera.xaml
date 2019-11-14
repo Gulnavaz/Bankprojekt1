@@ -8,74 +8,74 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid Background="Orange" FocusVisualPrimaryBrush="#FFB20E0E">
+        <Rectangle HorizontalAlignment="Center" Height="651" Stroke="Black" VerticalAlignment="Center" Width="907" RadiusX="0" RadiusY="0" Fill="Black"/>
+        <Rectangle HorizontalAlignment="Center" Height="599" Stroke="Black" VerticalAlignment="Center" Width="808" Fill="#FFFF6800"/>
         <TextBlock HorizontalAlignment="Left" 
-                   Margin="210,198,0,0" 
+                   Margin="414,273,0,0" 
                    Text="Namn:" 
                    TextWrapping="Wrap" 
                    VerticalAlignment="Top" 
-                   Height="64" 
-                   Width="142" 
-                   FontSize="48"/>
+                   Height="100" 
+                   Width="190" 
+                   FontSize="60"/>
 
         <TextBox x:Name="Namn" 
                  HorizontalAlignment="Left" 
-                 Margin="356,198,0,0" 
+                 Margin="600,266,0,0" 
                  Text="" 
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
-                 Height="68" 
-                 Width="308" 
+                 Height="94" 
+                 Width="326" 
                  TextChanged="TextBox_TextChanged" 
-                 FontSize="48"/>
+                 FontSize="48" RenderTransformOrigin="0.489,0.506" Background="#66FFFFFF"/>
 
         <TextBlock HorizontalAlignment="Left" 
-                   Margin="721,198,0,0" 
-                   Text="Personnr:" 
+                   Margin="331,401,0,0" 
+                   Text="PersonNr:" 
                    TextWrapping="Wrap" 
                    VerticalAlignment="Top" 
-                   Height="77" 
-                   Width="208" 
-                   FontSize="48"/>
+                   Height="104" 
+                   Width="268" 
+                   FontSize="60"/>
 
         <TextBox x:Name="pNr" 
                  HorizontalAlignment="Left" 
-                 Margin="948,198,0,0" 
+                 Margin="600,397,0,0" 
                  Text="" 
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
-                 Height="68" 
-                 Width="308" 
+                 Height="94" 
+                 Width="326" 
                  FontSize="48" 
                  RenderTransformOrigin="0.5,0.5" 
                  TextChanged="TextBox_TextChanged_1">
 
         </TextBox>
         <Button Content="Lägg till" 
-                Margin="1080,365,0,0" 
+                Margin="750,539,0,0" 
                 VerticalAlignment="Top" 
                 Height="72" 
                 Width="176" 
                 FontSize="36" 
-                Click="Button_Click"/>
+                Click="Button_Click" Background="#33FFFFFF"/>
 
-        <Button Content="Tillbaka" 
-                Margin="210,74,0,0" 
-                VerticalAlignment="Top" 
-                Height="46" 
-                Width="92" 
-                Click="Button_Click_1"/>
-
-        <TextBlock HorizontalAlignment="Center" 
+        <TextBlock HorizontalAlignment="Left" 
                    Name="kundText"
-                   Margin="0,364,0,0" 
+                   Margin="331,520,0,0" 
                    TextWrapping="Wrap" 
                    VerticalAlignment="Top" 
-                   Height="51" 
-                   Width="419"
                    FontFamily="Verdana"
                    FontSize="32"
-                   Foreground="DarkRed"/>
+                   Foreground="DarkRed" Width="418" Height="106" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <CompositeTransform ScaleX="1"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="381,120,0,0" Text="Regristrera Kund" TextWrapping="Wrap" VerticalAlignment="Top" Height="94" Width="506" FontSize="68"/>
+
+
 
     </Grid>
 </Page>

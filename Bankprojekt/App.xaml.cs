@@ -30,7 +30,13 @@ namespace Bankprojekt
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+
+            Account = new List<SavingsAccount>();
+            Customers = BankLogic.Instance.GetCustomers();
         }
+
+        public static List<SavingsAccount> Account;
+        public static List<Customer> Customers;
 
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points

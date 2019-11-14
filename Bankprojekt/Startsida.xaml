@@ -9,9 +9,32 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="249*" />
+            <ColumnDefinition Width="391*"/>
+        </Grid.ColumnDefinitions>
 
-        <Button Content="Tillbaka" Margin="44,46,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <ListView Margin="10,10,10,10" Name="CustomersListView" Grid.ColumnSpan="2" Background="Orange">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
 
+                        <StackPanel Grid.Column="0" >
+                            <TextBlock Text="{Binding Name}" FontWeight="Bold" />
+                            <TextBlock Text="{Binding PNr}" FontStyle="Italic" />
+                        </StackPanel>
 
+                        <StackPanel Grid.Column="1" >
+                            <TextBlock Text="{Binding Name}" FontWeight="Bold" />
+                            <TextBlock Text="{Binding PNr}" FontStyle="Italic" />
+                        </StackPanel>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </Page>

@@ -25,11 +25,7 @@ namespace Bankprojekt
         public Startsida()
         {
             this.InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(MainPage));
+            CustomersListView.ItemsSource = App.Customers.OrderBy(x => x.Name);
         }
     }
 }

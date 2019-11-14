@@ -9,11 +9,12 @@ namespace Bankprojekt
     public class Customer
     {
 
-        public Customer(string name, long pNr, List<SavingsAccount> accounts)
+        public Customer()
         {
-            this.Name = Name;
-            this.PNr = PNr;
-            this.Accounts = accounts;
+            //this.Name = Name;
+            //this.PNr = PNr;
+            //this.Accounts = accounts; 
+            Accounts = new List<SavingsAccount>();
         }
         public string Name { get; set; }
         public long PNr { get; set; }
