@@ -8,8 +8,8 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid Background="Orange" FocusVisualPrimaryBrush="#FFB20E0E">
-        <Rectangle HorizontalAlignment="Center" Height="651" Stroke="Black" VerticalAlignment="Center" Width="907" RadiusX="0" RadiusY="0" Fill="Black"/>
+    <Grid Background="Black" FocusVisualPrimaryBrush="#FFB20E0E">
+        <Rectangle HorizontalAlignment="Center" Height="651" Stroke="Black" VerticalAlignment="Center" Width="907" RadiusX="0" RadiusY="0" Fill="Orange"/>
         <Rectangle HorizontalAlignment="Center" Height="599" Stroke="Black" VerticalAlignment="Center" Width="808" Fill="#FFFF6800"/>
         <TextBlock HorizontalAlignment="Left" 
                    Margin="414,273,0,0" 
