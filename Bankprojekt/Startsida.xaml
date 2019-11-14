@@ -14,7 +14,7 @@
             <ColumnDefinition Width="391*"/>
         </Grid.ColumnDefinitions>
 
-        <ListView Margin="10,10,10,10" Name="CustomersListView" Grid.ColumnSpan="2" Background="Orange">
+        <ListView Margin="141,164,140,21" Name="CustomersListView" Grid.ColumnSpan="2" Background="Orange">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid>
@@ -24,17 +24,13 @@
                         </Grid.ColumnDefinitions>
 
                         <StackPanel Grid.Column="0" >
-                            <TextBlock Text="{Binding Name}" FontWeight="Bold" />
-                            <TextBlock Text="{Binding PNr}" FontStyle="Italic" />
-                        </StackPanel>
-
-                        <StackPanel Grid.Column="1" >
-                            <TextBlock Text="{Binding Name}" FontWeight="Bold" />
-                            <TextBlock Text="{Binding PNr}" FontStyle="Italic" />
+                            <TextBlock Text="{Binding Name}" FontWeight="Bold" FontSize="20" />
+                            <TextBlock Text="{Binding PNr}" FontStyle="Italic" FontSize="20" />
                         </StackPanel>
                     </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <TextBlock HorizontalAlignment="Left" Margin="10,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="259" Height="145" FontSize="72" Grid.Column="1"><Run Text="K"/><Run Text="under"/><LineBreak/><Run/></TextBlock>
     </Grid>
 </Page>

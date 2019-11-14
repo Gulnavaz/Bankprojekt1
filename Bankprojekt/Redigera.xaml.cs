@@ -25,7 +25,7 @@ namespace Bankprojekt
         public Redigera()
         {
             this.InitializeComponent();
-            
+            CustomersListView.ItemsSource = App.Customers.OrderBy(x => x.Name);
         }
     }
 }
