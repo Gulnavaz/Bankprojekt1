@@ -31,7 +31,7 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <TextBlock HorizontalAlignment="Left" Margin="354,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" Height="87" FontSize="50" Grid.Column="1" FocusVisualPrimaryBrush="Orange" FocusVisualSecondaryBrush="#99D62727" Foreground="Black" TextDecorations="Underline"><Run Text="K"/><Run Text="under"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="436,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" Height="87" FontSize="50" Grid.Column="1" FocusVisualPrimaryBrush="Orange" FocusVisualSecondaryBrush="#99D62727" Foreground="Black" TextDecorations="Underline"><Run Text="K"/><Run Text="under"/><LineBreak/><Run/></TextBlock>
 
 
     </Grid>

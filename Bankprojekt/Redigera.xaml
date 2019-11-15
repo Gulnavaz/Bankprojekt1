@@ -33,7 +33,14 @@
             </ListView.ItemTemplate>
 
         </ListView>
-        <TextBlock TextWrapping="Wrap" FontSize="50" Margin="466,81,445,545" Grid.ColumnSpan="2" Foreground="Black" TextDecorations="Underline" Text="Redigera Kund"/>
+        <TextBlock TextWrapping="Wrap" 
+                   FontSize="50" 
+                   Margin="466,81,445,545" 
+                   Grid.ColumnSpan="2" 
+                   Foreground="Black" 
+                   TextDecorations="Underline" 
+                   Text="Redigera Kund"/>
+
         <Button Content="Redigera" Margin="317,562,0,0" VerticalAlignment="Top" Height="59" Width="132" Background="#33FFA500" FocusVisualPrimaryBrush="White" BorderBrush="Black"/>
         <Button Content="Insättning/uttag" Grid.Column="1" Margin="290,562,0,0" VerticalAlignment="Top" Height="59" Width="155" Background="#33FFA500" FocusVisualPrimaryBrush="White" Foreground="Black" BorderBrush="Black"/>
 

@@ -9,6 +9,93 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid Background="White" FocusVisualPrimaryBrush="#FFB20E0E">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button Name="hamburger" 
+                    FontFamily="segoe MDL2 assets" 
+                    Content="&#xe700;" 
+                    FontSize="36" 
+                    Click="hamburger_Click"/>
+        <SplitView Name="MySplitView" 
+                   DisplayMode="CompactOverlay" 
+                   Grid.Row="1" 
+                   OpenPaneLength="300" 
+                   CompactPaneLength="56" >
+            <SplitView.Pane>
+
+                <ListBox SelectionMode="Single" 
+                         Name="iconsListBox"
+                         Background="Orange"
+                         SelectionChanged="iconsListBox_SelectionChanged">
+
+                    <ListBoxItem Name="hamburger">
+                        <StackPanel Orientation="Horizontal" Tapped="hamburger_Click">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" 
+                                       FontSize="36" 
+                                       Text="&#xe700;" />
+                            <TextBlock FontFamily="Verdana" 
+                                       FontSize="20" 
+                                       Padding="7" 
+                                       Text="" 
+                                       Margin="15,0,0,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem Name="start">
+                        <StackPanel Orientation="Horizontal" Tapped="Startsida_Tapped" >
+                            <TextBlock FontFamily="Segoe MDL2 Assets" 
+                                       FontSize="36" 
+                                       Text="&#xE80F;" />
+                            <TextBlock FontFamily="Verdana" 
+                                       FontSize="20" 
+                                       Padding="7" 
+                                       Text="Startsida" 
+                                       Margin="15,0,0,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+
+                    <ListBoxItem Name="register">
+                        <StackPanel Orientation="Horizontal" Tapped="Registrera_Tapped_1" >
+                            <TextBlock FontFamily="Segoe MDL2 Assets" 
+                                       FontSize="36" 
+                                       Text="&#xE1E2;" />
+                            <TextBlock FontFamily="Verdana" 
+                                       Text="Registrera kund" 
+                                       FontSize="20" 
+                                       Padding="7" 
+                                       Margin="15,0,0,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+
+                    <ListBoxItem x:Name="edit">
+                        <StackPanel Orientation="Horizontal" Tapped="Redigera_Tapped_2">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" 
+                                       FontSize="38" 
+                                       Text="&#xE779;" />
+                            <TextBlock FontFamily="Verdana" 
+                                       Text="Redigera kund" 
+                                       FontSize="20" 
+                                       Padding="7" 
+                                       Margin="15,0,0,0" Tapped="TextBlock_Tapped_3"/>
+                        </StackPanel>
+                    </ListBoxItem>
+                </ListBox>
+            </SplitView.Pane>
+            <SplitView.Content>
+                <Frame x:Name="NavigationDetail" Background="#FFFDFDFD">
+
+                </Frame>
+            </SplitView.Content>
+
+
+        </SplitView>
+
         <Rectangle HorizontalAlignment="Center" Height="651" Stroke="Black" VerticalAlignment="Center" Width="907" RadiusX="0" RadiusY="0" Fill="Orange" StrokeThickness="2"/>
         <Rectangle HorizontalAlignment="Center" Height="599" Stroke="Black" VerticalAlignment="Center" Width="808" Fill="White" StrokeThickness="2"/>
         <TextBlock HorizontalAlignment="Left" 

@@ -10,19 +10,19 @@
 
     <Grid>
 
-        <!--<Grid.RowDefinitions>
+        <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
-        </Grid.RowDefinitions>-->
-        <!--<Grid.ColumnDefinitions>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>-->
-        <!--<Button Name="hamburger" 
+        </Grid.ColumnDefinitions>
+        <Button Name="hamburger" 
                     FontFamily="segoe MDL2 assets" 
                     Content="&#xe700;" 
                     FontSize="36" 
-                    Click="hamburger_Click"/>-->
+                    Click="hamburger_Click"/>
         <SplitView Name="MySplitView" 
                    DisplayMode="CompactOverlay" 
                    Grid.Row="1" 
