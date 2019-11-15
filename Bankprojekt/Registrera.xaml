@@ -12,7 +12,7 @@
         <Rectangle HorizontalAlignment="Center" Height="651" Stroke="Black" VerticalAlignment="Center" Width="907" RadiusX="0" RadiusY="0" Fill="Orange" StrokeThickness="2"/>
         <Rectangle HorizontalAlignment="Center" Height="599" Stroke="Black" VerticalAlignment="Center" Width="808" Fill="White" StrokeThickness="2"/>
         <TextBlock HorizontalAlignment="Left" 
-                   Margin="459,177,0,0" 
+                   Margin="709,392,0,0" 
                    Text="Namn:" 
                    TextWrapping="Wrap" 
                    VerticalAlignment="Top" 
@@ -21,18 +21,18 @@
                    FontSize="30"/>
 
         <TextBox x:Name="Namn" 
-                 HorizontalAlignment="Left" 
-                 Margin="600,170,0,0" 
+                 HorizontalAlignment="Center" 
+                 Margin="0,392,0,0" 
                  Text="" 
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
                  Height="47" 
                  Width="268" 
                  TextChanged="TextBox_TextChanged" 
-                 FontSize="25" RenderTransformOrigin="0.489,0.506" Background="#66FFFFFF"/>
+                 FontSize="25" RenderTransformOrigin="0.497,0.521" Background="#66FFFFFF"/>
 
         <TextBlock HorizontalAlignment="Left" 
-                   Margin="418,254,0,0" 
+                   Margin="667,465,0,0" 
                    Text="PersonNr:" 
                    TextWrapping="Wrap" 
                    VerticalAlignment="Top" 
@@ -41,8 +41,8 @@
                    FontSize="30"/>
 
         <TextBox x:Name="pNr" 
-                 HorizontalAlignment="Left" 
-                 Margin="600,247,0,0" 
+                 HorizontalAlignment="Center" 
+                 Margin="0,465,0,0" 
                  Text="" 
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
@@ -54,11 +54,11 @@
 
         </TextBox>
         <Button Content="Lägg till" 
-                Margin="717,0,0,0" 
+                Margin="873,540,0,0" 
                 Height="55" 
                 Width="151" 
                 FontSize="25" 
-                Click="Button_Click" Background="#33FFA500" Foreground="Black" BorderBrush="Black" FocusVisualPrimaryBrush="Orange"/>
+                Click="Button_Click" Background="#33FFA500" Foreground="Black" BorderBrush="Black" FocusVisualPrimaryBrush="Orange" VerticalAlignment="Top"/>
 
         <TextBlock HorizontalAlignment="Left" 
                    Name="kundText"
@@ -72,7 +72,7 @@
                 <CompositeTransform ScaleX="1"/>
             </TextBlock.RenderTransform>
         </TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="512,84,0,0" Text="Regristrera Kund" TextWrapping="Wrap" VerticalAlignment="Top" Height="58" Width="321" FontSize="35" TextDecorations="Underline"/>
+        <TextBlock HorizontalAlignment="Left" Margin="826,303,0,0" Text="Registrera Kund" TextWrapping="Wrap" VerticalAlignment="Top" Height="58" Width="321" FontSize="35" TextDecorations="Underline"/>
 
 
 
