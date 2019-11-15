@@ -18,11 +18,7 @@
             <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Button Name="hamburger" 
-                    FontFamily="segoe MDL2 assets" 
-                    Content="&#xe700;" 
-                    FontSize="36" 
-                    Click="hamburger_Click"/>
+        
         <SplitView Name="MySplitView" 
                    DisplayMode="CompactOverlay" 
                    Grid.Row="1" 
@@ -35,7 +31,7 @@
                          Background="Orange"
                          SelectionChanged="iconsListBox_SelectionChanged">
 
-                    <ListBoxItem Name="hamburger">
+                    <ListBoxItem Name="hamburg">
                         <StackPanel Orientation="Horizontal" Tapped="hamburger_Click">
                             <TextBlock FontFamily="Segoe MDL2 Assets" 
                                        FontSize="36" 
