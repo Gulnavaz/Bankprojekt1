@@ -126,13 +126,11 @@
     <Compile Include="Registrera.xaml.cs">
       <DependentUpon>Registrera.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Creditsaccount.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SavingsAccount.cs" />
     <Compile Include="Startsida.xaml.cs">
       <DependentUpon>Startsida.xaml</DependentUpon>
     </Compile>
