@@ -13,8 +13,112 @@
             <ColumnDefinition Width="249*" />
             <ColumnDefinition Width="391*"/>
         </Grid.ColumnDefinitions>
-        <Rectangle HorizontalAlignment="Left" Height="806" Margin="706,0,0,0" Stroke="Black" VerticalAlignment="Center" Width="1105" Grid.ColumnSpan="2" StrokeThickness="2" Fill="Orange"/>
-        <ListView Margin="4,185,151,190" Name="CustomersListView" Background="White" FocusVisualSecondaryBrush="#99000000" BorderBrush="Black" Grid.Column="1">
+
+        <SplitView Name="MySplitView" 
+                   DisplayMode="CompactOverlay" 
+                   Grid.Row="1" 
+                   OpenPaneLength="300" 
+                   CompactPaneLength="56" >
+            
+            <SplitView.Pane>
+
+                <ListBox SelectionMode="Single" 
+                         Name="iconsListBox"
+                         Background="Orange"
+                         SelectionChanged="iconsListBox_SelectionChanged">
+
+                    <ListBoxItem Name="hamburg">
+                        <StackPanel Orientation="Horizontal" 
+                                    Tapped="hamburger_Click">
+                            
+                            <TextBlock FontFamily="Segoe MDL2 Assets" 
+                                       FontSize="36" 
+                                       Text="&#xe700;" />
+                            
+                            <TextBlock FontFamily="Verdana" 
+                                       FontSize="20" 
+                                       Padding="7" 
+                                       Text="" 
+                                       Margin="15,0,0,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem Name="start">
+                        <StackPanel Orientation="Horizontal" 
+                                    Tapped="Startsida_Tapped" >
+                            
+                            <TextBlock FontFamily="Segoe MDL2 Assets" 
+                                       FontSize="36" 
+                                       Text="&#xE179;" />
+                            
+                            <TextBlock FontFamily="Verdana" 
+                                       FontSize="20" 
+                                       Padding="7" 
+                                       Text="Kundöversikt" 
+                                       Margin="15,0,0,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+
+                    <ListBoxItem Name="register">
+                        <StackPanel Orientation="Horizontal" 
+                                    Tapped="Registrera_Tapped_1" >
+                            
+                            <TextBlock FontFamily="Segoe MDL2 Assets" 
+                                       FontSize="36" 
+                                       Text="&#xE1E2;" />
+                            
+                            <TextBlock FontFamily="Verdana" 
+                                       Text="Registrera kund" 
+                                       FontSize="20" 
+                                       Padding="7" 
+                                       Margin="15,0,0,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+
+                    <ListBoxItem x:Name="edit">
+                        <StackPanel Orientation="Horizontal" 
+                                    Tapped="Redigera_Tapped_2">
+                            
+                            <TextBlock FontFamily="Segoe MDL2 Assets" 
+                                       FontSize="38" 
+                                       Text="&#xE779;" />
+                            
+                            <TextBlock FontFamily="Verdana" 
+                                       Text="Redigera kund" 
+                                       FontSize="20" 
+                                       Padding="7" 
+                                       Margin="15,0,0,0" 
+                                       Tapped="TextBlock_Tapped_3"/>
+                        </StackPanel>
+                    </ListBoxItem>
+                </ListBox>
+            </SplitView.Pane>
+            <SplitView.Content>
+                
+                <Frame x:Name="NavigationDetail" 
+                       Background="#FFFDFDFD">
+
+                </Frame>
+            </SplitView.Content>
+
+
+        </SplitView>
+
+        <Rectangle HorizontalAlignment="Left" 
+                   Height="806" 
+                   Margin="706,0,0,0" 
+                   Stroke="Black" 
+                   VerticalAlignment="Center" 
+                   Width="1105" 
+                   Grid.ColumnSpan="2" 
+                   StrokeThickness="2" 
+                   Fill="Orange"/>
+        
+        <ListView Margin="4,185,151,190" 
+                  Name="CustomersListView" 
+                  Background="White" 
+                  FocusVisualSecondaryBrush="#99000000" 
+                  BorderBrush="Black" 
+                  Grid.Column="1">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid>
@@ -24,14 +128,32 @@
                         </Grid.ColumnDefinitions>
 
                         <StackPanel Grid.Column="0" >
-                            <TextBlock Text="{Binding Name}" FontWeight="Bold" FontSize="20" />
-                            <TextBlock Text="{Binding PNr}" FontStyle="Italic" FontSize="20" />
+                            <TextBlock Text="{Binding Name}" 
+                                       FontWeight="Bold" 
+                                       FontSize="20" />
+                            
+                            <TextBlock Text="{Binding PNr}" 
+                                       FontStyle="Italic" 
+                                       FontSize="20" />
                         </StackPanel>
                     </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <TextBlock HorizontalAlignment="Left" Margin="436,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" Height="87" FontSize="50" Grid.Column="1" FocusVisualPrimaryBrush="Orange" FocusVisualSecondaryBrush="#99D62727" Foreground="Black" TextDecorations="Underline"><Run Text="K"/><Run Text="under"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" 
+                   Margin="436,39,0,0" 
+                   TextWrapping="Wrap" 
+                   VerticalAlignment="Top" 
+                   Width="187" 
+                   Height="87" 
+                   FontSize="50" 
+                   Grid.Column="1" 
+                   FocusVisualPrimaryBrush="Orange" 
+                   FocusVisualSecondaryBrush="#99D62727" 
+                   Foreground="Black" 
+                   TextDecorations="Underline"><Run 
+                       Text="K"/><Run 
+                       Text="under"/><LineBreak/><Run/></TextBlock>
 
 
     </Grid>
