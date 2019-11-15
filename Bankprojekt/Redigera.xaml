@@ -13,9 +13,8 @@
             <ColumnDefinition Width="249*" />
             <ColumnDefinition Width="391*"/>
         </Grid.ColumnDefinitions>
-        <Rectangle HorizontalAlignment="Left" Height="633" Margin="214,49,0,0" Stroke="Black" VerticalAlignment="Top" Width="856" Grid.ColumnSpan="2" StrokeThickness="2" Fill="Orange"/>
-        <Rectangle HorizontalAlignment="Left" Height="577" Margin="260,81,0,0" Stroke="Black" VerticalAlignment="Top" Width="767" Grid.ColumnSpan="2" FocusVisualPrimaryBrush="Orange" StrokeThickness="2" Fill="White"/>
-        <ListView Margin="317,168,331,167" Name="CustomersListView" Grid.ColumnSpan="2" Background="White" FocusVisualSecondaryBrush="#99000000" BorderBrush="Black">
+        <Rectangle HorizontalAlignment="Left" Height="633" Margin="46,148,0,0" Stroke="Black" VerticalAlignment="Top" Width="856" StrokeThickness="2" Fill="Orange" Grid.Column="1"/>
+        <ListView Margin="92,193,303,350" Name="CustomersListView" Background="White" FocusVisualSecondaryBrush="#99000000" BorderBrush="Black" SelectionChanged="CustomersListView_SelectionChanged" Grid.Column="1">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid>
@@ -34,15 +33,14 @@
 
         </ListView>
         <TextBlock TextWrapping="Wrap" 
-                   FontSize="50" 
-                   Margin="466,81,445,545" 
-                   Grid.ColumnSpan="2" 
+                   FontSize="60" 
+                   Margin="254,42,499,957" 
                    Foreground="Black" 
                    TextDecorations="Underline" 
-                   Text="Redigera Kund"/>
+                   Text="Redigera Kund" Grid.Column="1"/>
 
-        <Button Content="Redigera" Margin="317,562,0,0" VerticalAlignment="Top" Height="59" Width="132" Background="#33FFA500" FocusVisualPrimaryBrush="White" BorderBrush="Black"/>
-        <Button Content="Insättning/uttag" Grid.Column="1" Margin="290,562,0,0" VerticalAlignment="Top" Height="59" Width="155" Background="#33FFA500" FocusVisualPrimaryBrush="White" Foreground="Black" BorderBrush="Black"/>
+        <Button Content="Redigera" Margin="102,661,0,0" VerticalAlignment="Top" Height="59" Width="132" Background="#33FFA500" FocusVisualPrimaryBrush="White" BorderBrush="Black" Grid.Column="1"/>
+        <Button Content="Insättning/uttag" Grid.Column="1" Margin="698,661,0,0" VerticalAlignment="Top" Height="59" Width="155" Background="#33FFA500" FocusVisualPrimaryBrush="White" Foreground="Black" BorderBrush="Black"/>
 
 
 

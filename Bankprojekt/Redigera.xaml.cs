@@ -27,5 +27,10 @@ namespace Bankprojekt
             this.InitializeComponent();
             CustomersListView.ItemsSource = App.Customers.OrderBy(x => x.Name);
         }
+
+        private void CustomersListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
