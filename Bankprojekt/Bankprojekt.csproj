@@ -131,6 +131,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SavingsAccount.cs" />
     <Compile Include="Startsida.xaml.cs">
       <DependentUpon>Startsida.xaml</DependentUpon>
     </Compile>
