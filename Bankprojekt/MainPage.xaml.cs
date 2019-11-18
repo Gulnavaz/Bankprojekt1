@@ -28,8 +28,7 @@ namespace Bankprojekt
             this.InitializeComponent();
             NavigationDetail.Navigate(typeof(Startsida));
 
-            string appName = Windows.ApplicationModel.Package.Current.DisplayName;
-            BankLogic runtime = new BankLogic();
+            //string appName = Windows.ApplicationModel.Package.Current.DisplayName;
            
            
         }

@@ -7,81 +7,62 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-    <Grid Background="White" Margin="0,0,10,0">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="249*" />
-            <ColumnDefinition Width="391*"/>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        
+        <StackPanel Grid.Column="1" Grid.Row="0" VerticalAlignment="Center">
+            <TextBlock Text="Redigera Kunder" FontSize="42" FontWeight="Bold" HorizontalAlignment="Center" />
+        </StackPanel>
+        <ScrollViewer Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="2">
+            <ListView Background="Wheat" x:Name="CustomersListView" 
+                  IsItemClickEnabled="True"
+                  ItemClick="SelectCustomer_Click">
+                
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Name}" 
+                                       FontWeight="Bold" 
+                                       FontSize="15" />
 
-        <Rectangle HorizontalAlignment="Left"
-                   Height="633" 
-                   Margin="46,148,0,0" 
-                   Stroke="Black" 
-                   VerticalAlignment="Top" 
-                   Width="856" 
-                   StrokeThickness="2" 
-                   Fill="Orange" 
-                   Grid.Column="1"/>
-        
-        <ListView Margin="92,193,303,350" 
-                  Name="CustomersListView"
-                  Background="White" 
-                  FocusVisualSecondaryBrush="#99000000" 
-                  BorderBrush="Black" 
-                  SelectionChanged="CustomersListView_SelectionChanged" 
-                  Grid.Column="1">
-            
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
-                        </Grid.ColumnDefinitions>
-
-                        <StackPanel Grid.Column="0" >
-                            <TextBlock Text="{Binding Name}" FontWeight="Bold" FontSize="16" />
-                            <TextBlock Text="{Binding PNr}" FontStyle="Italic" FontSize="16" />
+                            <TextBlock Text="{Binding PNr}" 
+                                       FontStyle="Italic" 
+                                       FontSize="15" />
+                            <TextBlock Text="{Binding SavingsAccount}" 
+                                       FontStyle="Italic" 
+                                       FontSize="15" />
                         </StackPanel>
-                    </Grid>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-
-        </ListView>
-        <TextBlock TextWrapping="Wrap" 
-                   FontSize="60" 
-                   Margin="275,42,478,957" 
-                   Foreground="Black" 
-                   TextDecorations="Underline" 
-                   Text="Redigera Kund" 
-                   Grid.Column="1"/>
-
-        <Button Content="Redigera" 
-                Margin="102,661,0,0" 
-                VerticalAlignment="Top" 
-                Height="59" 
-                Width="132" 
-                Background="#33FFA500" 
-                FocusVisualPrimaryBrush="White" 
-                BorderBrush="Black" 
-                Grid.Column="1"/>
-        
-        <Button Content="Insättning/uttag" 
-                Grid.Column="1" 
-                Margin="698,661,0,0" 
-                VerticalAlignment="Top" 
-                Height="59" 
-                Width="155" 
-                Background="#33FFA500" 
-                FocusVisualPrimaryBrush="White" 
-                Foreground="Black" 
-                BorderBrush="Black"/>
-
-
-
-
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollViewer>
+        <StackPanel Grid.Row="1" Grid.Column="2" Grid.RowSpan="2" Background="#FFFFCC70">
+            <Ellipse Width="150" Height="150">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="Assets/profilepic.png" />
+                </Ellipse.Fill>
+            </Ellipse>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="0,0,20,0" Text="Namn: "></TextBlock>
+                <TextBlock x:Name="SelectedPersonName"/>
+                <TextBox x:Name="SelectedPersonNameEdit" Visibility="Collapsed" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="0,0,20,0" Text="Personnummer: "></TextBlock>
+                <TextBlock x:Name="SelectedPersonPnr"/>
+            </StackPanel>
+            
+        </StackPanel>
+        <Button FontSize="14" x:Name="btnEdit" Click="btnEdit_Click" Grid.Row="3" HorizontalAlignment="Left" Grid.Column="3" >Redigera</Button>
+        <Button FontSize="14" Click="btnMoney_Click_1"  Grid.Row="3" HorizontalAlignment="Right" Grid.Column="3">Insättning/utdrag</Button>
     </Grid>
 </Page>

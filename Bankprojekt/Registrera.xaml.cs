@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -27,16 +28,6 @@ namespace Bankprojekt
             this.InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)//Namn
-        {
-
-        }
-
-        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)//prnummer
-        {
-
-        }
-
         private void Button_Click(object sender, RoutedEventArgs e)//lägg till
         {
             try
@@ -44,16 +35,20 @@ namespace Bankprojekt
                 if (App.Customers.Where(c => c.PNr == Convert.ToInt64(pNr.Text)).ToList().Count > 0) 
                 {
                     kundText.Text = "Kunden finns redan";
+                    kundText.Foreground = new SolidColorBrush(Colors.Red);
                 }
                 else
                 {
                     BankLogic.Instance.AddCustomer(Namn.Text, Convert.ToInt64(pNr.Text));
                     kundText.Text = "Kunden är tillagd";
+                    kundText.Foreground = new SolidColorBrush(Colors.Green);
+
                 }
             }
             catch(Exception ex)
             {
                 kundText.Text = ex.Message;
+                kundText.Foreground = new SolidColorBrush(Colors.Red);
             }
 
         }

@@ -8,75 +8,38 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid Background="White" FocusVisualPrimaryBrush="#FFB20E0E" Margin="2,0,-2,10">
+    <RelativePanel VerticalAlignment="Center" HorizontalAlignment="Center">
 
+        <StackPanel BorderBrush="Orange" BorderThickness="5" Padding="50">
 
-        
+            <StackPanel x:Name="NameStack" Margin="0,0,0,10">
+                <TextBox x:Name="Namn" 
+                 PlaceholderText="Kundens namn"
+                 HorizontalAlignment="Stretch"
+                 FontSize="32" 
+                 Background="#66FFFFFF"/>
+            </StackPanel>
 
-        <Rectangle HorizontalAlignment="Left" Height="651" Stroke="Black" VerticalAlignment="Top" Width="907" RadiusX="0" RadiusY="0" Fill="Orange" StrokeThickness="2" Grid.ColumnSpan="2" Margin="624,214,0,0" Grid.RowSpan="2" Grid.Column="1"/>
-        <Rectangle HorizontalAlignment="Left" Height="599" Stroke="Black" VerticalAlignment="Top" Width="846" Fill="White" StrokeThickness="2" Margin="660,240,0,0"/>
-        <TextBlock HorizontalAlignment="Left" 
-                   Margin="793,379,0,0" 
-                   Text="Namn:" 
-                   TextWrapping="Wrap" 
-                   VerticalAlignment="Top" 
-                   Height="42" 
-                   Width="113" 
-                   FontSize="30"/>
-
-        <TextBox x:Name="Namn" 
-                 HorizontalAlignment="Left" 
-                 Margin="926,377,0,0" 
-                 Text="" 
-                 TextWrapping="Wrap" 
-                 VerticalAlignment="Top" 
-                 Height="47" 
-                 Width="268" 
-                 TextChanged="TextBox_TextChanged" 
-                 FontSize="25" RenderTransformOrigin="0.497,0.521" Background="#66FFFFFF"/>
-
-        <TextBlock HorizontalAlignment="Left" 
-                   Margin="760,449,0,0" 
-                   Text="PersonNr:" 
-                   TextWrapping="Wrap" 
-                   VerticalAlignment="Top" 
-                   Height="38" 
-                   Width="140" 
-                   FontSize="30"/>
-
-        <TextBox x:Name="pNr" 
-                 HorizontalAlignment="Left" 
-                 Margin="926,446,0,0" 
-                 Text="" 
-                 TextWrapping="Wrap" 
-                 VerticalAlignment="Top" 
-                 Height="47" 
-                 Width="268" 
-                 FontSize="25" 
-                 RenderTransformOrigin="0.5,0.5" 
-                 TextChanged="TextBox_TextChanged_1"/>
-        <Button Content="Lägg till" 
-                Margin="980,525,0,0" 
-                Height="55" 
-                Width="151" 
+            <StackPanel x:Name="PnrStack" Margin="0,0,0,30">
+                <TextBox x:Name="pNr"  
+                 PlaceholderText="Personnummer"
+                 HorizontalAlignment="Stretch"
+                 FontSize="32"/>
+            </StackPanel>
+            <Button Content="Lägg till" 
                 FontSize="25" 
-                Click="Button_Click" Background="#33FFA500" Foreground="Black" BorderBrush="Black" FocusVisualPrimaryBrush="Orange" VerticalAlignment="Top"/>
-
-        <TextBlock HorizontalAlignment="Left" 
+                Click="Button_Click" 
+                Background="#33FFA500" 
+                Foreground="Black" 
+                BorderBrush="Black" 
+                    FocusVisualPrimaryBrush="Orange" />
+            
+            <TextBlock HorizontalAlignment="Left" 
                    Name="kundText"
-                   Margin="101,61,0,0" 
-                   TextWrapping="Wrap" 
-                   VerticalAlignment="Top" 
-                   FontFamily="Verdana"
                    FontSize="23"
-                   Foreground="Black" Width="295" Height="92" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Grid.Row="1">
-            <TextBlock.RenderTransform>
-                <CompositeTransform ScaleX="1"/>
-            </TextBlock.RenderTransform>
-        </TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="934,296,0,0" Text="Registrera Kund" TextWrapping="Wrap" VerticalAlignment="Top" Height="58" Width="321" FontSize="35" TextDecorations="Underline"/>
-
-
-
-    </Grid>
+                   Margin="0,60,0,0">
+            </TextBlock>
+        </StackPanel>
+        <!--</Grid>-->
+    </RelativePanel>
 </Page>

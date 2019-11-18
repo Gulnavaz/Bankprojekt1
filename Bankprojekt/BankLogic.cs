@@ -54,9 +54,37 @@ namespace Bankprojekt
             //Tar bort kund med personnummer pNr ur banken
             return null;
         }
-        public int AddSavingsAccount(long pNr)
+        public int AddSavingsAccount(Customer test)
         {
-            //Skapar ett konto till kund med personnummer pNr
+            //Skapa ny tom customer
+            Customer customer = new Customer();
+
+            //Leta efter den kunden som ska ha nytt sparkonto
+            foreach (var cust in App.Customers)
+            {
+                //Om kunden i listan motsvarar den vi skickar in (test)
+                if(cust == test)
+                {
+                    //spara kunden vi hittade till vår "customer" som vi skapa ovan
+                    customer = cust;
+                }
+            }
+
+            //ta bort den kunden
+            App.Customers.Remove(customer);
+
+            //skapa ny savingsaccount
+            SavingsAccount saveAccount = new SavingsAccount();
+
+            //Lägg till saker i sparkontot
+            saveAccount.AccountId = Convert.ToInt32(customer.PNr);
+            saveAccount.Saldo = 500;
+            saveAccount.Räntesats = Convert.ToDouble(saveAccount.Saldo * Convert.ToDecimal(0.1 / 100));
+            saveAccount.Kontotyp = "sparkonto";
+
+            customer.Accounts.Add(saveAccount);
+            App.Customers.Add(customer);
+
             return 0;
         }
         public string GetAccount(Customer cust, int accountId)

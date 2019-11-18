@@ -23,7 +23,7 @@
                    DisplayMode="CompactOverlay" 
                    Grid.Row="1" 
                    OpenPaneLength="300" 
-                   CompactPaneLength="56" >
+                   CompactPaneLength="56" Grid.ColumnSpan="2">
             <SplitView.Pane>
 
                 <ListBox SelectionMode="Single" 
@@ -89,27 +89,8 @@
                 </ListBox>
             </SplitView.Pane>
             <SplitView.Content>
-                <Frame x:Name="NavigationDetail" 
-                       Background="#FFFDFDFD">
-
-                </Frame>
+                <Frame x:Name="NavigationDetail"/>
             </SplitView.Content>
-
-
         </SplitView>
-        <TextBlock Grid.Column="1" 
-                   HorizontalAlignment="Left"
-                   FontSize="90"
-                   Margin="144,409,0,0" 
-                   Grid.Row="1" 
-                   TextWrapping="Wrap" 
-                   VerticalAlignment="Top" 
-                   Height="147" 
-                   Width="1230"
-                   Text="Välkommen till Newton's bank"
-                   Foreground="DarkOrange"/>
-
-
-
     </Grid>
 </Page>
