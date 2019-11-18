@@ -16,7 +16,7 @@
 
 
 
-        <Rectangle HorizontalAlignment="Left" 
+        <Rectangle HorizontalAlignment="Center" 
                    Height="588" 
                    Margin="423,186,0,0" 
                    Stroke="Black" 
@@ -25,7 +25,7 @@
                    StrokeThickness="2" 
                    Fill="Orange" Grid.ColumnSpan="2"/>
 
-        <ListView Margin="452,218,286,277" 
+        <ListView Margin="452,218,286,97" 
                   Name="CustomersListView" 
                   Background="White" 
                   FocusVisualSecondaryBrush="#99000000" 
