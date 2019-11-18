@@ -25,7 +25,9 @@ namespace Bankprojekt
     {
         public Customer Selected { get; set; }
         private ObservableCollection<Customer> customerslist = new ObservableCollection<Customer>();
+        private ObservableCollection<SavingsAccount> savingslist = new ObservableCollection<SavingsAccount>();
         ObservableCollection<Customer> CustList { get { return customerslist; } }
+        ObservableCollection<SavingsAccount> AccList { get { return savingslist; } }
         public Redigera()
         {
             this.InitializeComponent();
@@ -77,11 +79,7 @@ namespace Bankprojekt
         {
             //BankLogic.Instance.Deposit()
         }
-
-        private void addAccount_Click_1(object sender, RoutedEventArgs e)
-        {
-            BankLogic.Instance.AddSavingsAccount(Selected);
-        }
+       
 
         private void Withdraw_Click(object sender, RoutedEventArgs e)
         {
@@ -91,6 +89,14 @@ namespace Bankprojekt
 
         private void Remove_Click(object sender, RoutedEventArgs e)
         {
+
+        }
+
+        private void Addaccount_Click(object sender, RoutedEventArgs e)
+        {
+            var customer = (Customer)CustomersListView.SelectedItem;
+            BankLogic.Instance.AddSavingsAccount(customer);
+
 
         }
     }
