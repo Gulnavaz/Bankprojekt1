@@ -32,6 +32,7 @@ namespace Bankprojekt
         }
         public bool AddCustomer(string name, long pNr, int accountId)
         {
+            customers.Add(new SavingsAccount(accountId));
             App.Customers.Add(new Customer
             {
                 Name = name,
