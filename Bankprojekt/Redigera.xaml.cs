@@ -90,7 +90,7 @@ namespace Bankprojekt
             var selectedCustomer = (Customer)CustomersListView.SelectedItem;
             Selected = selectedCustomer;
             decimal amount = decimal.Parse(saldoinput.Text);           
-            BankLogic.Instance.Withdraw(selectedCustomer.AccountId, amount) ;
+            BankLogic.Instance.Withdraw(selectedCustomer, amount) ;
         }
 
         private void Remove_Click(object sender, RoutedEventArgs e)
