@@ -110,10 +110,14 @@ namespace Bankprojekt
 
             return true;
         }
-        public bool Withdraw(long pNr, int accountId, decimal amount)
+        public bool Withdraw(Customer cust, long pNr, int accountId, decimal amount)
         {
             //Gör ett uttag på konto med kontonnummer accountId som tillhör
             //kunden pNr, returnerar true om det gick bra annars false.
+
+            List<SavingsAccount> accountlist = cust.Accounts;
+            SavingsAccount searchAcc = accountlist.FirstOrDefault(chosen => chosen.AccountId == accountId);
+            searchAcc.Saldo -= amount;
             return true;
         }
         public string CloseAccount(long pNr, int accountId)

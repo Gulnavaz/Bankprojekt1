@@ -26,7 +26,7 @@
             <ListView Background="Wheat" x:Name="CustomersListView" ItemsSource="{x:Bind CustList}"
                   IsItemClickEnabled="True"
                   ItemClick="SelectCustomer_Click">
-                
+
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="local:Customer">
                         <StackPanel>
@@ -52,17 +52,20 @@
                 </Ellipse.Fill>
             </Ellipse>
             <StackPanel Orientation="Horizontal">
-                <TextBlock Margin="0,0,20,0" Text="Namn: "></TextBlock>
+                <TextBlock Margin="0,0,20,0" Text="Namn: " FontSize="18"></TextBlock>
                 <TextBlock x:Name="SelectedPersonName"/>
                 <TextBox x:Name="SelectedPersonNameEdit" Visibility="Collapsed" />
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <TextBlock Margin="0,0,20,0" Text="Personnummer: "></TextBlock>
+                <TextBlock Margin="0,0,20,0" Text="Personnummer: " FontSize="18"></TextBlock>
                 <TextBlock x:Name="SelectedPersonPnr"/>
             </StackPanel>
-            
+
+
         </StackPanel>
-        <Button FontSize="14" x:Name="btnEdit" Click="btnEdit_Click" Grid.Row="3" HorizontalAlignment="Left" Grid.Column="3" >Redigera</Button>
-        <Button FontSize="14" Click="btnMoney_Click_1"  Grid.Row="3" HorizontalAlignment="Right" Grid.Column="3">Insättning/utdrag</Button>
+        <Button FontSize="17" x:Name="btnEdit" Click="btnEdit_Click" Grid.Row="3" HorizontalAlignment="Left" Margin="90,0,0,0" Grid.Column="3" >Redigera</Button>
+        <Button FontSize="17" x:Name="Remove" Grid.Row="2" VerticalAlignment="Bottom" Margin="90,0,0,50" Grid.Column="2" Width="87" Click="Remove_Click" >Radera</Button>
+        <Button FontSize="17" Click="btnMoney_Click_1"  Grid.Row="3" HorizontalAlignment="Right" Grid.Column="3" Margin="0,0,90,0" Width="128">Insättning</Button>
+        <Button FontSize="17" x:Name="Withdraw" Content="Utdrag" Grid.Row="3" Grid.Column="3" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="128" Click="Withdraw_Click" Margin="0,0,90,50"/>
     </Grid>
 </Page>

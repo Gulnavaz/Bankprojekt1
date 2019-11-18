@@ -82,5 +82,16 @@ namespace Bankprojekt
         {
             BankLogic.Instance.AddSavingsAccount(Selected);
         }
+
+        private void Withdraw_Click(object sender, RoutedEventArgs e)
+        {
+            //var account = (int)SavingsAccount.AccountId;
+            //BankLogic.Instance.Withdraw(Selected, SelectedPersonPnr, cus);
+        }
+
+        private void Remove_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -10,24 +10,24 @@
 
     <RelativePanel VerticalAlignment="Center" HorizontalAlignment="Center">
 
-        <StackPanel BorderBrush="Orange" BorderThickness="5" Padding="50">
+        <StackPanel BorderBrush="Orange" BorderThickness="5" Padding="100">
 
             <StackPanel x:Name="NameStack" Margin="0,0,0,10">
                 <TextBox x:Name="Namn" 
                  PlaceholderText="Kundens namn"
                  HorizontalAlignment="Stretch"
                  FontSize="32" 
-                 Background="#66FFFFFF"/>
+                 Background="#66FFFFFF" Width="346"/>
             </StackPanel>
 
             <StackPanel x:Name="PnrStack" Margin="0,0,0,30">
                 <TextBox x:Name="pNr"  
                  PlaceholderText="Personnummer"
                  HorizontalAlignment="Stretch"
-                 FontSize="32"/>
+                 FontSize="32" Width="346"/>
             </StackPanel>
             <Button Content="Lägg till" 
-                FontSize="25" 
+                FontSize="30" 
                 Click="Button_Click" 
                 Background="#33FFA500" 
                 Foreground="Black" 
@@ -36,7 +36,7 @@
             
             <TextBlock HorizontalAlignment="Left" 
                    Name="kundText"
-                   FontSize="23"
+                   FontSize="30"
                    Margin="0,60,0,0">
             </TextBlock>
         </StackPanel>
