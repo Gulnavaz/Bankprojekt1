@@ -116,7 +116,7 @@ namespace Bankprojekt
                 List<SavingsAccount> accountlist = cust.Accounts;
                 SavingsAccount SearchAccount = accountlist.FirstOrDefault(choosen => choosen.AccountId == accountId);
 
-                 += amount;
+                cust.Saldo += amount;
 
                 return true;
             }
