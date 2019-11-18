@@ -30,9 +30,10 @@
                   Background="White" 
                   FocusVisualSecondaryBrush="#99000000" 
                   BorderBrush="Black" 
-                  Grid.Column="1">
+                  Grid.Column="1"
+                  ItemsSource="{x:Bind CustList}">
             <ListView.ItemTemplate>
-                <DataTemplate>
+                <DataTemplate x:DataType="local:Customer">
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />

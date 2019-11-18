@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using System.Collections.ObjectModel;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -22,10 +23,23 @@ namespace Bankprojekt
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        
         public MainPage()
         {
 
             this.InitializeComponent();
+            App.Customers.Add(new Customer() { Name = "Björn Johansson", PNr = 8912022738 });
+            App.Customers.Add(new Customer() { Name = "Fredrik Karlsson", PNr = 9202131242 });
+            App.Customers.Add(new Customer() { Name = "Amanda Andersson", PNr = 9412038234 });
+            App.Customers.Add(new Customer() { Name = "Alexander Johansson", PNr = 8205021523 });
+            App.Customers.Add(new Customer() { Name = "Alex Larsen", PNr = 6305151526 });
+            App.Customers.Add(new Customer() { Name = "Anders Larsson", PNr = 6908172592 });
+            App.Customers.Add(new Customer() { Name = "Anders Ohlsen", PNr = 7811022849 });
+            App.Customers.Add(new Customer() { Name = "Pontus Fyhrberg", PNr = 7412199572 });
+
+         
+        
+            //CustomersListView.ItemsSource = App.Customers.OrderBy(x => x.Name);
             NavigationDetail.Navigate(typeof(Startsida));
 
             //string appName = Windows.ApplicationModel.Package.Current.DisplayName;

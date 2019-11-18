@@ -23,12 +23,12 @@
             <TextBlock Text="Redigera Kunder" FontSize="42" FontWeight="Bold" HorizontalAlignment="Center" />
         </StackPanel>
         <ScrollViewer Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="2">
-            <ListView Background="Wheat" x:Name="CustomersListView" 
+            <ListView Background="Wheat" x:Name="CustomersListView" ItemsSource="{x:Bind CustList}"
                   IsItemClickEnabled="True"
                   ItemClick="SelectCustomer_Click">
                 
                 <ListView.ItemTemplate>
-                    <DataTemplate>
+                    <DataTemplate x:DataType="local:Customer">
                         <StackPanel>
                             <TextBlock Text="{Binding Name}" 
                                        FontWeight="Bold" 
