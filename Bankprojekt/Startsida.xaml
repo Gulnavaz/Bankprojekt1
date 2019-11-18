@@ -16,34 +16,33 @@
 
 
 
-        <Rectangle HorizontalAlignment="Left" 
+        <Rectangle HorizontalAlignment="Center" 
                    Height="588" 
-                   Margin="415,152,0,0" 
+                   Margin="423,186,0,0" 
                    Stroke="Black" 
                    VerticalAlignment="Top" 
                    Width="824" 
                    StrokeThickness="2" 
-                   Fill="Orange" Grid.ColumnSpan="2" RenderTransformOrigin="0.465,0.515"/>
+                   Fill="Orange" Grid.ColumnSpan="2"/>
 
-        <ListView Name="CustomersListView" 
+        <ListView Margin="452,218,286,97" 
+                  Name="CustomersListView" 
                   Background="White" 
                   FocusVisualSecondaryBrush="#99000000" 
                   BorderBrush="Black"
-                  ItemsSource="{x:Bind CustList}" Grid.ColumnSpan="2" 
-            SelectionChanged="CustomersListView_SelectionChanged" 
-            Margin="444,184,298,292">
+                  ItemsSource="{x:Bind CustList}" Grid.ColumnSpan="2">
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="local:Customer">
                     <Grid>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="*" />
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
 
-                        <StackPanel Grid.Column="0" >
+                        <StackPanel Grid.Column="1" >
                             <TextBlock Text="{Binding Name}" 
                                        FontWeight="Bold" 
-                                       FontSize="20"  />
+                                       FontSize="20" />
 
                             <TextBlock Text="{Binding PNr}" 
                                        FontStyle="Italic" 
