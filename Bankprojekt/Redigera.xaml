@@ -62,7 +62,9 @@
             </StackPanel>
 
 
+
         </StackPanel>
+        <TextBox x:Name="saldoinput" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="2" Width="150" Height="35" Background="White" PlaceholderText="Saldo" TextWrapping="Wrap" Margin="90,34,0,0" />
         <Button FontSize="17" x:Name="btnEdit" Click="btnEdit_Click" Grid.Row="3" HorizontalAlignment="Left" Margin="90,50,0,0" Grid.Column="3" >Redigera</Button>
         <Button FontSize="17" x:Name="Remove" Grid.Row="2" VerticalAlignment="Bottom" Margin="90,0,0,20" Grid.Column="2" Width="87" Click="Remove_Click" >Radera</Button>
         <Button FontSize="17" 

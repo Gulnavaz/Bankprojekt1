@@ -19,6 +19,7 @@ namespace Bankprojekt
         public string Name { get; set; }
         public long PNr { get; set; }
         public List<SavingsAccount> Accounts { get; set; }
+        
 
     }
 }

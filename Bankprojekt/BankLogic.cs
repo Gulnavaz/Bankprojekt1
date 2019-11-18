@@ -121,7 +121,7 @@ namespace Bankprojekt
                 return false;
             }
         }
-        public bool Withdraw(Customer cust, long pNr, int accountId, decimal amount)
+        public bool Withdraw(Customer cust, int accountId, decimal amount)
         {
             //Gör ett uttag på konto med kontonnummer accountId som tillhör
             //kunden pNr, returnerar true om det gick bra annars false.
