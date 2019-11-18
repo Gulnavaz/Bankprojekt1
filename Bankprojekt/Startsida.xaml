@@ -14,18 +14,17 @@
             <ColumnDefinition Width="391*"/>
         </Grid.ColumnDefinitions>
 
-        
+
 
         <Rectangle HorizontalAlignment="Left" 
-                   Height="806" 
-                   Margin="706,0,0,0" 
+                   Height="721" 
+                   Margin="552,0,0,0" 
                    Stroke="Black" 
                    VerticalAlignment="Center" 
-                   Width="1105" 
-                   Grid.ColumnSpan="2" 
+                   Width="862" 
                    StrokeThickness="2" 
-                   Fill="Orange"/>
-        
+                   Fill="Orange" Grid.ColumnSpan="2"/>
+
         <ListView Margin="4,185,151,190" 
                   Name="CustomersListView" 
                   Background="White" 
@@ -44,7 +43,7 @@
                             <TextBlock Text="{Binding Name}" 
                                        FontWeight="Bold" 
                                        FontSize="20" />
-                            
+
                             <TextBlock Text="{Binding PNr}" 
                                        FontStyle="Italic" 
                                        FontSize="20" />
