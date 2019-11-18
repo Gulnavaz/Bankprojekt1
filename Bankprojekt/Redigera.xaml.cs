@@ -46,6 +46,8 @@ namespace Bankprojekt
             SelectedPersonPnr.Text = Selected.PNr.ToString();
             SelectedPersonName.Text = Selected.Name;
             SelectedPersonNameEdit.Text = Selected.Name;
+            kontoNrBox.Text = selectedCustomer.AccountId.ToString();
+            SelectedSaldo.Text = selectedCustomer.Saldo.ToString();
         }
 
         private void btnEdit_Click(object sender, RoutedEventArgs e)
@@ -85,8 +87,10 @@ namespace Bankprojekt
 
         private void Withdraw_Click(object sender, RoutedEventArgs e)
         {
-            //var account = (int)SavingsAccount.AccountId;
-            //BankLogic.Instance.Withdraw(Selected, SelectedPersonPnr, cus);
+            var selectedCustomer = (Customer)CustomersListView.SelectedItem;
+            Selected = selectedCustomer;
+            decimal amount = decimal.Parse(saldoinput.Text);           
+            BankLogic.Instance.Withdraw(selectedCustomer.AccountId, amount) ;
         }
 
         private void Remove_Click(object sender, RoutedEventArgs e)

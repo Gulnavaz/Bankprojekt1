@@ -11,6 +11,7 @@ namespace Bankprojekt
         public static int accountNumberTracker = 1000;
         public Customer()
         {
+            Saldo = 500;
             AccountId = accountNumberTracker;
             accountNumberTracker++;
             Accounts = new List<SavingsAccount>();
@@ -20,6 +21,6 @@ namespace Bankprojekt
         public List<SavingsAccount> Accounts { get; set; }
 
         public int AccountId { get; set; }
-
+        public decimal Saldo { get; set; }
     }
 }

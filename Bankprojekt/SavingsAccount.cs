@@ -12,7 +12,6 @@ namespace Bankprojekt
         public static int accountNumberTracker = 1000;
         public SavingsAccount()
         {
-            Saldo = 0;
             Kontotyp = "";
             AccountId = accountNumberTracker;
             accountNumberTracker++;
