@@ -14,25 +14,23 @@
             <ColumnDefinition Width="391*"/>
         </Grid.ColumnDefinitions>
 
-        
+
 
         <Rectangle HorizontalAlignment="Left" 
-                   Height="806" 
-                   Margin="706,0,0,0" 
+                   Height="588" 
+                   Margin="423,186,0,0" 
                    Stroke="Black" 
-                   VerticalAlignment="Center" 
-                   Width="1105" 
-                   Grid.ColumnSpan="2" 
+                   VerticalAlignment="Top" 
+                   Width="824" 
                    StrokeThickness="2" 
-                   Fill="Orange"/>
-        
-        <ListView Margin="4,185,151,190" 
+                   Fill="Orange" Grid.ColumnSpan="2"/>
+
+        <ListView Margin="452,218,286,277" 
                   Name="CustomersListView" 
                   Background="White" 
                   FocusVisualSecondaryBrush="#99000000" 
-                  BorderBrush="Black" 
-                  Grid.Column="1"
-                  ItemsSource="{x:Bind CustList}">
+                  BorderBrush="Black"
+                  ItemsSource="{x:Bind CustList}" Grid.ColumnSpan="2">
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="local:Customer">
                     <Grid>
@@ -41,11 +39,11 @@
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
 
-                        <StackPanel Grid.Column="0" >
+                        <StackPanel Grid.Column="1" >
                             <TextBlock Text="{Binding Name}" 
                                        FontWeight="Bold" 
                                        FontSize="20" />
-                            
+
                             <TextBlock Text="{Binding PNr}" 
                                        FontStyle="Italic" 
                                        FontSize="20" />
@@ -55,7 +53,7 @@
             </ListView.ItemTemplate>
         </ListView>
         <TextBlock HorizontalAlignment="Left" 
-                   Margin="436,39,0,0" 
+                   Margin="172,39,0,0" 
                    TextWrapping="Wrap" 
                    VerticalAlignment="Top" 
                    Width="187" 
