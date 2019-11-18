@@ -8,18 +8,18 @@ namespace Bankprojekt
 {
     public class Customer
     {
-
+        public static int accountNumberTracker = 1000;
         public Customer()
         {
-            //this.Name = Name;
-            //this.PNr = PNr;
-            //this.Accounts = accounts; 
+            AccountId = accountNumberTracker;
+            accountNumberTracker++;
             Accounts = new List<SavingsAccount>();
         }
         public string Name { get; set; }
         public long PNr { get; set; }
         public List<SavingsAccount> Accounts { get; set; }
-        
+
+        public int AccountId { get; set; }
 
     }
 }

@@ -93,13 +93,5 @@ namespace Bankprojekt
         {
 
         }
-
-        private void Addaccount_Click(object sender, RoutedEventArgs e)
-        {
-            var customer = (Customer)CustomersListView.SelectedItem;
-            BankLogic.Instance.AddSavingsAccount(customer);
-
-
-        }
     }
 }

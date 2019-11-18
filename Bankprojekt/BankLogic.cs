@@ -30,12 +30,15 @@ namespace Bankprojekt
             List<Customer> cust = customers;
             return cust;
         }
-        public bool AddCustomer(string name, long pNr)
+        public bool AddCustomer(string name, long pNr, int accountId)
         {
-            App.Customers.Add(new Customer {
-                Name = name, 
-                PNr = pNr
-            });
+            App.Customers.Add(new Customer
+            {
+                Name = name,
+                PNr = pNr,
+                
+            }) ;
+
 
             return true;
             
@@ -79,7 +82,6 @@ namespace Bankprojekt
             SavingsAccount saveAccount = new SavingsAccount();
 
             //Lägg till saker i sparkontot
-            saveAccount.AccountId = Convert.ToInt32(customer.PNr);
             saveAccount.Saldo = 500;
             saveAccount.Räntesats = Convert.ToDouble(saveAccount.Saldo * Convert.ToDecimal(0.1 / 100));
             saveAccount.Kontotyp = "sparkonto";
@@ -88,21 +90,22 @@ namespace Bankprojekt
             App.Customers.Add(customer);
 
             return 0;
+            
         }
-        public string GetAccount(Customer cust, int accountId)
-        {
-            string acc = null;
-            foreach (SavingsAccount ac in cust.Accounts)
-            {
-                if (accountId == ac.AccountId)
-                {
-                    acc = ac.AccountId + " " + ac.Saldo + "" + ac.Räntesats;
-                    break;
-                }
-            }
-            return acc;
+        //public string GetAccount(Customer cust, int accountId)
+        //{
+        //    string acc = null;
+        //    foreach (Customer ac in cust.Accounts)
+        //    {
+        //        if (accountId == ac.AccountId)
+        //        {
+        //            acc = ac.AccountId + " " + ac.Saldo + "" + ac.Räntesats;
+        //            break;
+        //        }
+        //    }
+        //    return acc;
 
-        }
+        //}
         public bool Deposit(Customer cust, long pNr, int accountId, decimal amount)
         {
 
