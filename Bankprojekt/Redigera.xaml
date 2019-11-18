@@ -60,9 +60,36 @@
             </StackPanel>
 
             <StackPanel Orientation="Horizontal">
-                <TextBlock Margin="0,0,20,0" Text="Personnummer: " FontSize="16"></TextBlock>
+                <TextBlock Margin="0,0,20,0"
+                           Text="Personnummer: " 
+                           FontSize="16"></TextBlock>
                 <TextBlock x:Name="SelectedPersonPnr" FontSize="16"/>
             </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="0,0,0,0"
+                           Text="Kontonummer:"
+                           FontSize="16"
+                           x:Name="kontoNr" RenderTransformOrigin="0.514,2.478">
+                    
+                </TextBlock>
+                <TextBlock x:Name="kontoNrBox"
+                         Width="250" 
+                         Margin="5,0,0,0">
+                    
+                </TextBlock>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="0,0,0,0"
+                           Text="Saldo:"
+                           FontSize="16"
+                           x:Name="showSaldo" />
+                <TextBlock x:Name="SelectedSaldo"
+                           FontSize="16"/>
+
+            </StackPanel>
+                       
 
 
 

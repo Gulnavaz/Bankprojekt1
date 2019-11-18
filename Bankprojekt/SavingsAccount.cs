@@ -22,7 +22,7 @@ namespace Bankprojekt
         public double Räntesats { get; set; }
         public string Kontotyp { get; set; }
         public int AccountId { get; set; }
-    }
+    }   
 
 }
 

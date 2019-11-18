@@ -77,7 +77,9 @@ namespace Bankprojekt
 
         private void btnMoney_Click_1(object sender, RoutedEventArgs e)
         {
-            //BankLogic.Instance.Deposit()
+            var selectedCustomer = (Customer)CustomersListView.SelectedItem;
+            BankLogic.Instance.Deposit(selectedCustomer, selectedCustomer.PNr, int.Parse(kontoNrBox.Text), decimal.Parse(saldoinput.Text));
+            SelectedSaldo.Text = selectedCustomer.Accounts[0].Saldo.ToString();
         }
        
 
