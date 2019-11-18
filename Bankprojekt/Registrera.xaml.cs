@@ -39,7 +39,7 @@ namespace Bankprojekt
                 }
                 else
                 {                    
-                    BankLogic.Instance.AddCustomer(Namn.Text, Convert.ToInt64(pNr.Text), Customer.accountNumberTracker, );
+                    BankLogic.Instance.AddCustomer(Namn.Text, Convert.ToInt64(pNr.Text), Customer.accountNumberTracker);
                     kundText.Text = "Kunden är tillagd";
                     kundText.Foreground = new SolidColorBrush(Colors.Green);
 

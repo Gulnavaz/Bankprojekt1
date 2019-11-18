@@ -32,7 +32,7 @@ namespace Bankprojekt
         }
         public bool AddCustomer(string name, long pNr, int accountId)
         {
-            customers.Add(new SavingsAccount(accountId));
+            
             App.Customers.Add(new Customer
             {
                 Name = name,
@@ -116,7 +116,7 @@ namespace Bankprojekt
                 List<SavingsAccount> accountlist = cust.Accounts;
                 SavingsAccount SearchAccount = accountlist.FirstOrDefault(choosen => choosen.AccountId == accountId);
 
-                SearchAccount.Saldo += amount;
+                 += amount;
 
                 return true;
             }
