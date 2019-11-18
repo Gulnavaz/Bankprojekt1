@@ -34,5 +34,10 @@ namespace Bankprojekt
                 customerslist.Add(cust);
             }
         }
+
+        private void CustomersListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

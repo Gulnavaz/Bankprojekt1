@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Bankprojekt
 {
-    public class BankLogic
+    public class BankLogic       
     {
+        public decimal amount;
+        public decimal balance;
         public List<Customer> customers = new List<Customer>();
         private static BankLogic instance = null;
 
@@ -103,12 +105,20 @@ namespace Bankprojekt
         }
         public bool Deposit(Customer cust, long pNr, int accountId, decimal amount)
         {
-            List<SavingsAccount> accountlist = cust.Accounts;
-            SavingsAccount SearchAccount = accountlist.FirstOrDefault(choosen => choosen.AccountId == accountId);
 
-            SearchAccount.Saldo += amount;
+            if (amount <= balance)
+            {
+                List<SavingsAccount> accountlist = cust.Accounts;
+                SavingsAccount SearchAccount = accountlist.FirstOrDefault(choosen => choosen.AccountId == accountId);
 
-            return true;
+                SearchAccount.Saldo += amount;
+
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
         public bool Withdraw(Customer cust, long pNr, int accountId, decimal amount)
         {
