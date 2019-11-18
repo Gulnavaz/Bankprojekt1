@@ -52,12 +52,12 @@
                 </Ellipse.Fill>
             </Ellipse>
             <StackPanel Orientation="Horizontal">
-                <TextBlock Margin="0,10,20,0" Text="Namn: " FontSize="16"></TextBlock>
+                <TextBlock Margin="0,0,20,0" Text="Namn: " FontSize="16"></TextBlock>
                 <TextBlock x:Name="SelectedPersonName" FontSize="16"/>
                 <TextBox x:Name="SelectedPersonNameEdit" Visibility="Collapsed" />
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <TextBlock Margin="0,5,20,0" Text="Personnummer: " FontSize="16"></TextBlock>
+                <TextBlock Margin="0,0,20,0" Text="Personnummer: " FontSize="16"></TextBlock>
                 <TextBlock x:Name="SelectedPersonPnr" FontSize="16"/>
             </StackPanel>
 
@@ -65,7 +65,14 @@
         </StackPanel>
         <Button FontSize="17" x:Name="btnEdit" Click="btnEdit_Click" Grid.Row="3" HorizontalAlignment="Left" Margin="90,50,0,0" Grid.Column="3" >Redigera</Button>
         <Button FontSize="17" x:Name="Remove" Grid.Row="2" VerticalAlignment="Bottom" Margin="90,0,0,20" Grid.Column="2" Width="87" Click="Remove_Click" >Radera</Button>
-        <Button FontSize="17" Click="btnMoney_Click_1"  Grid.Row="3" HorizontalAlignment="Right" Grid.Column="3" Margin="0,50,90,0" Width="128">Insättning</Button>
+        <Button FontSize="17" 
+                Click="btnMoney_Click_1"  
+                Grid.Row="3" 
+                HorizontalAlignment="Right" 
+                Grid.Column="3" 
+                Margin="0,50,90,0" 
+                Width="128">Insättning
+        </Button>
         <Button FontSize="17" x:Name="Withdraw" Content="Utdrag" Grid.Row="3" Grid.Column="3" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="128" Click="Withdraw_Click" Margin="0,0,90,20"/>
     </Grid>
 </Page>

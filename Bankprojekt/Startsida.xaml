@@ -16,9 +16,9 @@
 
 
 
-        <Rectangle HorizontalAlignment="Center" 
-                   Height="588" 
-                   Margin="423,186,0,0" 
+        <Rectangle HorizontalAlignment="Left" 
+                   Height="618" 
+                   Margin="413,186,0,0" 
                    Stroke="Black" 
                    VerticalAlignment="Top" 
                    Width="824" 

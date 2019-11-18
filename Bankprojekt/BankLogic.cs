@@ -106,8 +106,9 @@ namespace Bankprojekt
         public bool Deposit(Customer cust, long pNr, int accountId, decimal amount)
         {
 
-            if (amount <= balance)
-            {
+            if (amount > 0)
+            { 
+            
                 List<SavingsAccount> accountlist = cust.Accounts;
                 SavingsAccount SearchAccount = accountlist.FirstOrDefault(choosen => choosen.AccountId == accountId);
 
@@ -125,10 +126,17 @@ namespace Bankprojekt
             //Gör ett uttag på konto med kontonnummer accountId som tillhör
             //kunden pNr, returnerar true om det gick bra annars false.
 
-            List<SavingsAccount> accountlist = cust.Accounts;
-            SavingsAccount searchAcc = accountlist.FirstOrDefault(chosen => chosen.AccountId == accountId);
-            searchAcc.Saldo -= amount;
-            return true;
+            if (amount <= balance)
+            {
+                List<SavingsAccount> accountlist = cust.Accounts;
+                SavingsAccount searchAcc = accountlist.FirstOrDefault(chosen => chosen.AccountId == accountId);
+                searchAcc.Saldo -= amount;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
         public string CloseAccount(long pNr, int accountId)
         {

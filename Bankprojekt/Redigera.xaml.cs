@@ -75,7 +75,7 @@ namespace Bankprojekt
 
         private void btnMoney_Click_1(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
         private void addAccount_Click_1(object sender, RoutedEventArgs e)
