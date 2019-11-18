@@ -46,7 +46,8 @@ namespace Bankprojekt
             SelectedPersonPnr.Text = Selected.PNr.ToString();
             SelectedPersonName.Text = Selected.Name;
             SelectedPersonNameEdit.Text = Selected.Name;
-            kontoNrBox.Text = Selected.AccountId.ToString();
+            kontoNrBox.Text = selectedCustomer.AccountId.ToString();
+            SelectedSaldo.Text = selectedCustomer.Saldo.ToString();
         }
 
         private void btnEdit_Click(object sender, RoutedEventArgs e)
@@ -66,8 +67,6 @@ namespace Bankprojekt
                 SelectedPersonPnr.Text = Selected.PNr.ToString();
                 SelectedPersonName.Text = Selected.Name;
                 SelectedPersonNameEdit.Text = Selected.Name;
-                kontoNrBox.Text = Selected.AccountId.ToString();
-                
             }
             else if (!(SelectedPersonNameEdit.Visibility == Visibility.Visible))
             {
@@ -81,15 +80,17 @@ namespace Bankprojekt
         private void btnMoney_Click_1(object sender, RoutedEventArgs e)
         {
             var selectedCustomer = (Customer)CustomersListView.SelectedItem;
-            BankLogic.Instance.Deposit(selectedCustomer, selectedCustomer.PNr, selectedCustomer.AccountId, decimal.Parse(saldoinput.Text));
+            BankLogic.Instance.Deposit(selectedCustomer, selectedCustomer.PNr, int.Parse(kontoNrBox.Text), decimal.Parse(saldoinput.Text));
             SelectedSaldo.Text = selectedCustomer.Accounts[0].Saldo.ToString();
         }
        
 
         private void Withdraw_Click(object sender, RoutedEventArgs e)
         {
-            //var account = (int)SavingsAccount.AccountId;
-            //BankLogic.Instance.Withdraw(Selected, SelectedPersonPnr, cus);
+            var selectedCustomer = (Customer)CustomersListView.SelectedItem;
+            Selected = selectedCustomer;
+            decimal amount = decimal.Parse(saldoinput.Text);           
+            BankLogic.Instance.Withdraw(selectedCustomer.AccountId, amount) ;
         }
 
         private void Remove_Click(object sender, RoutedEventArgs e)
